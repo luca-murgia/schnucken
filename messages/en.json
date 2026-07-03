@@ -9,6 +9,7 @@
     "about": "Get to Know Us",
     "whereAndWhen": "Where & When",
     "menu": "Our Menu",
+    "events": "Events",
     "reserveTable": "Reserve a Table",
     "findUs": "How to Find Us",
     "contact": "Contact Us",
@@ -85,6 +86,10 @@
       "title": "Our Menu",
       "intro": "Our seasonal menu of starters, mains, and desserts. Content coming soon."
     },
+    "events": {
+      "title": "Events",
+      "intro": "Sunday Service, specials, and special evenings — what's coming up at Das Schnucken."
+    },
     "reserveTable": {
       "title": "Reserve a Table",
       "intro": "Reserve your table with us. Booking coming soon."
@@ -99,7 +104,48 @@
     },
     "reviews": {
       "title": "Leave a Review",
-      "intro": "Share your experience with us. Content coming soon."
+      "intro": "Enjoyed your visit? Tell us — and future guests — about it."
+    }
+  },
+  "events": {
+    "eyebrow": "Events",
+    "empty": "No events are planned right now. Check back soon.",
+    "example": {
+      "title": "Burger Sunday",
+      "subtitle": "Every Sunday · 15:00–21:00 · while stocks last",
+      "description": "Oklahoma Smash Burger + fries\nBeyond Burger (vegetarian) + fries\n+++\n\nCake of the day\n\nReserve a table or simply drop by.\n\nAt Sunday Service we serve only burgers and specials — not our regular menu."
+    },
+    "admin": {
+      "title": "Events",
+      "subtitle": "Create event cards with an image, title, subtitle, and description. Changes appear on the site immediately.",
+      "newEvent": "New event",
+      "editEvent": "Edit event",
+      "titleLabel": "Title",
+      "titlePlaceholder": "e.g. Burger Sunday",
+      "subtitleLabel": "Subtitle (optional)",
+      "subtitlePlaceholder": "e.g. Every Sunday · 15:00–21:00",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "Describe the event. A blank line starts a new paragraph.",
+      "imageLabel": "Image",
+      "imageHint": "JPG or PNG. The image is automatically resized on upload.",
+      "chooseImage": "Choose image",
+      "changeImage": "Change image",
+      "removeImage": "Remove image",
+      "publishedLabel": "Show on the website",
+      "orderLabel": "Order",
+      "orderHint": "Lower numbers appear first.",
+      "save": "Save",
+      "saving": "Saving …",
+      "saved": "Saved",
+      "error": "Saving failed. Please try again.",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "delete": "Delete",
+      "deleteConfirm": "Really delete this event?",
+      "deleting": "Deleting …",
+      "draft": "Draft",
+      "emptyList": "No events yet. Create your first one above.",
+      "listHeading": "Existing events"
     }
   },
   "login": {
@@ -119,6 +165,8 @@
     "role": "Role",
     "signOut": "Sign out",
     "manageContent": "Manage content",
+    "eventsEditing": "Create and edit the event cards shown on the website.",
+    "manageEvents": "Manage events",
     "content": {
       "title": "Website content",
       "subtitle": "Edit the copy in all three languages. Changes appear on the site immediately.",
@@ -142,6 +190,22 @@
     "datenschutzTitle": "Privacy Policy",
     "placeholder": "The legal text is provided by the operator and inserted here."
   },
+  "imprint": {
+    "businessName": "Name of the business",
+    "legalForm": "Company name and legal form",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "street": "Street address",
+    "postcode": "Postcode",
+    "town": "Town",
+    "country": "Country",
+    "phone": "Phone number",
+    "email": "Email address",
+    "registerEntry": "Register entry",
+    "registrationNumber": "Registration number",
+    "localTaxNumber": "Local tax number",
+    "vatNumber": "VAT number"
+  },
   "cookie": {
     "message": "We use cookies to improve your experience. You decide what gets loaded.",
     "accept": "Accept all",
@@ -162,5 +226,10 @@
     "vatLabel": "VAT number",
     "getDirections": "Get directions",
     "country": "Germany"
+  },
+  "reviews": {
+    "eyebrow": "Reviews",
+    "body": "Enjoyed an evening of schnucken with us? Your words help other guests find their way to our table — and they mean the world to our small team. Share a few lines about your visit on Google Maps.",
+    "cta": "Leave a review on Google"
   }
 }

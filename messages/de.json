@@ -9,6 +9,7 @@
     "about": "Über uns",
     "whereAndWhen": "Wo & Wann",
     "menu": "Speisekarte",
+    "events": "Veranstaltungen",
     "reserveTable": "Tisch reservieren",
     "findUs": "So finden Sie uns",
     "contact": "Kontakt",
@@ -85,6 +86,10 @@
       "title": "Speisekarte",
       "intro": "Unsere saisonale Karte mit Vorspeisen, Hauptgerichten und Desserts. Inhalt folgt in Kürze."
     },
+    "events": {
+      "title": "Veranstaltungen",
+      "intro": "Sunday Service, Specials und besondere Abende – was bei uns als Nächstes ansteht."
+    },
     "reserveTable": {
       "title": "Tisch reservieren",
       "intro": "Reservieren Sie Ihren Tisch bei uns. Buchung folgt in Kürze."
@@ -99,7 +104,48 @@
     },
     "reviews": {
       "title": "Bewertung abgeben",
-      "intro": "Teilen Sie Ihre Erfahrung mit uns. Inhalt folgt in Kürze."
+      "intro": "Hat es Ihnen bei uns gefallen? Erzählen Sie uns – und künftigen Gästen – davon."
+    }
+  },
+  "events": {
+    "eyebrow": "Veranstaltungen",
+    "empty": "Zurzeit sind keine Veranstaltungen geplant. Schauen Sie bald wieder vorbei.",
+    "example": {
+      "title": "Burger Sunday",
+      "subtitle": "Jeden Sonntag · 15:00–21:00 Uhr · solange der Vorrat reicht",
+      "description": "Oklahoma Smash Burger + Fries\nBeyond Burger (vegetarisch) + Fries\n+++\n\nKuchen des Tages\n\nReservieren oder einfach vorbeikommen.\n\nBeim Sunday Service gibt es nur Burger und Specials – nicht unser reguläres Menü."
+    },
+    "admin": {
+      "title": "Veranstaltungen",
+      "subtitle": "Legen Sie Event-Karten mit Bild, Titel, Untertitel und Beschreibung an. Änderungen erscheinen sofort auf der Website.",
+      "newEvent": "Neue Veranstaltung",
+      "editEvent": "Veranstaltung bearbeiten",
+      "titleLabel": "Titel",
+      "titlePlaceholder": "z. B. Burger Sunday",
+      "subtitleLabel": "Untertitel (optional)",
+      "subtitlePlaceholder": "z. B. Jeden Sonntag · 15:00–21:00 Uhr",
+      "descriptionLabel": "Beschreibung",
+      "descriptionPlaceholder": "Beschreiben Sie die Veranstaltung. Eine Leerzeile beginnt einen neuen Absatz.",
+      "imageLabel": "Bild",
+      "imageHint": "JPG oder PNG. Das Bild wird beim Hochladen automatisch verkleinert.",
+      "chooseImage": "Bild auswählen",
+      "changeImage": "Bild ändern",
+      "removeImage": "Bild entfernen",
+      "publishedLabel": "Auf der Website anzeigen",
+      "orderLabel": "Reihenfolge",
+      "orderHint": "Kleinere Zahl wird zuerst angezeigt.",
+      "save": "Speichern",
+      "saving": "Speichern …",
+      "saved": "Gespeichert",
+      "error": "Speichern fehlgeschlagen. Bitte versuchen Sie es erneut.",
+      "cancel": "Abbrechen",
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "deleteConfirm": "Diese Veranstaltung wirklich löschen?",
+      "deleting": "Löschen …",
+      "draft": "Entwurf",
+      "emptyList": "Noch keine Veranstaltungen. Legen Sie oben die erste an.",
+      "listHeading": "Bestehende Veranstaltungen"
     }
   },
   "login": {
@@ -119,6 +165,8 @@
     "role": "Rolle",
     "signOut": "Abmelden",
     "manageContent": "Inhalte verwalten",
+    "eventsEditing": "Erstellen und bearbeiten Sie die Event-Karten für die Website.",
+    "manageEvents": "Veranstaltungen verwalten",
     "content": {
       "title": "Website-Inhalte",
       "subtitle": "Bearbeiten Sie die Texte in allen drei Sprachen. Änderungen erscheinen sofort auf der Website.",
@@ -142,6 +190,22 @@
     "datenschutzTitle": "Datenschutzerklärung",
     "placeholder": "Der rechtliche Text wird vom Betreiber bereitgestellt und hier eingefügt."
   },
+  "imprint": {
+    "businessName": "Name des Unternehmens",
+    "legalForm": "Firmenname und Rechtsform",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "street": "Straße",
+    "postcode": "Postleitzahl",
+    "town": "Ort",
+    "country": "Land",
+    "phone": "Telefonnummer",
+    "email": "E-Mail-Adresse",
+    "registerEntry": "Registereintrag",
+    "registrationNumber": "Registernummer",
+    "localTaxNumber": "Steuernummer",
+    "vatNumber": "USt-IdNr."
+  },
   "cookie": {
     "message": "Wir verwenden Cookies, um Ihr Erlebnis zu verbessern. Sie entscheiden, was geladen wird.",
     "accept": "Alle akzeptieren",
@@ -162,5 +226,10 @@
     "vatLabel": "USt-IdNr.",
     "getDirections": "Route planen",
     "country": "Deutschland"
+  },
+  "reviews": {
+    "eyebrow": "Bewertungen",
+    "body": "Haben Sie mit uns einen Abend voller Schnucken genossen? Ihre Worte helfen anderen Gästen, den Weg an unseren Tisch zu finden – und sie bedeuten unserem kleinen Team unglaublich viel. Teilen Sie ein paar Zeilen über Ihren Besuch auf Google Maps.",
+    "cta": "Auf Google bewerten"
   }
 }
