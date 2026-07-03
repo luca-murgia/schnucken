@@ -51,10 +51,12 @@ test("admin is gated: anonymous users are sent to the localized login", async ({
   await expect(page.getByLabel("E-Mail")).toBeVisible();
 });
 
-test("cookie banner can be accepted", async ({ page }) => {
+test("cookie consent banner appears on first visit and can be accepted", async ({
+  page,
+}) => {
   await page.goto("/de");
-  const accept = page.getByRole("button", { name: "Alle akzeptieren" });
-  await expect(accept).toBeVisible();
-  await accept.click();
-  await expect(accept).toBeHidden();
+  const banner = page.getByTestId("consent-banner-root");
+  await expect(banner).toBeVisible();
+  await page.getByTestId("consent-banner-accept-button").click();
+  await expect(banner).toBeHidden();
 });

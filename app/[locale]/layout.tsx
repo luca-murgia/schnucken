@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 import { routing } from "@/i18n/routing";
 import { SiteHeader } from "@/components/site/header";
 import { SiteFooter } from "@/components/site/footer";
-import { CookieBanner } from "@/components/site/cookie-banner";
+import { ConsentProvider } from "@/components/consent/consent-provider";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -64,10 +64,11 @@ export default async function LocaleLayout({
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
         <NextIntlClientProvider>
-          <SiteHeader />
-          <main className="flex-1">{children}</main>
-          <SiteFooter />
-          <CookieBanner />
+          <ConsentProvider locale={locale}>
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
+            <SiteFooter />
+          </ConsentProvider>
         </NextIntlClientProvider>
       </body>
     </html>
