@@ -49,6 +49,28 @@
     "openInMaps": "Open in Google Maps",
     "mapTitle": "Map"
   },
+  "reservation": {
+    "intro": "Reserve your table — we look forward to your visit.",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone (optional)",
+    "dateLabel": "Date",
+    "datePlaceholder": "Pick a date",
+    "timeLabel": "Time",
+    "timePlaceholder": "Pick a time",
+    "guestsLabel": "Guests",
+    "guestsPlaceholder": "Select number",
+    "guestsOption": "{count, plural, one {# guest} other {# guests}}",
+    "notesLabel": "Notes (optional)",
+    "notesPlaceholder": "Allergies, occasion, high chair …",
+    "submit": "Request reservation",
+    "submitting": "Sending …",
+    "error": "Please complete all required fields correctly.",
+    "closedNote": "Closed on Monday & Tuesday.",
+    "thankYouTitle": "Thank you!",
+    "thankYouBody": "We’ve received your reservation request and will get back to you shortly to confirm.",
+    "newReservation": "New reservation"
+  },
   "sections": {
     "whereAndWhen": {
       "title": "Where & When",

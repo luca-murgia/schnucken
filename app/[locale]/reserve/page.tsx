@@ -1,6 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
-import { PagePlaceholder } from "@/components/site/page-placeholder";
+import { ReservationForm } from "@/components/site/reservation-form";
 
 export async function generateMetadata({
   params,
@@ -22,11 +22,17 @@ export default async function ReservePage({
   const t = await getTranslations();
 
   return (
-    <PagePlaceholder
-      title={t("sections.reserveTable.title")}
-      intro={t("sections.reserveTable.intro")}
-      comingSoon={t("common.comingSoon")}
-      back={t("common.backHome")}
-    />
+    <section className="mx-auto max-w-3xl px-5 py-16 md:px-6 md:py-24">
+      <span className="text-xs font-semibold tracking-[0.18em] text-clay uppercase">
+        {t("nav.reserveTable")}
+      </span>
+      <h1 className="mt-3 text-4xl font-semibold text-ink md:text-5xl">
+        {t("sections.reserveTable.title")}
+      </h1>
+      <p className="mt-4 max-w-xl text-lg text-muted-foreground">
+        {t("reservation.intro")}
+      </p>
+      <ReservationForm />
+    </section>
   );
 }

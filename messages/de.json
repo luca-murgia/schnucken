@@ -49,6 +49,28 @@
     "openInMaps": "In Google Maps öffnen",
     "mapTitle": "Karte"
   },
+  "reservation": {
+    "intro": "Reservieren Sie Ihren Tisch – wir freuen uns auf Ihren Besuch.",
+    "nameLabel": "Name",
+    "emailLabel": "E-Mail",
+    "phoneLabel": "Telefon (optional)",
+    "dateLabel": "Datum",
+    "datePlaceholder": "Datum wählen",
+    "timeLabel": "Uhrzeit",
+    "timePlaceholder": "Uhrzeit wählen",
+    "guestsLabel": "Personen",
+    "guestsPlaceholder": "Anzahl wählen",
+    "guestsOption": "{count, plural, one {# Person} other {# Personen}}",
+    "notesLabel": "Anmerkungen (optional)",
+    "notesPlaceholder": "Allergien, Anlass, Kinderstuhl …",
+    "submit": "Reservierung anfragen",
+    "submitting": "Wird gesendet …",
+    "error": "Bitte füllen Sie alle Pflichtfelder korrekt aus.",
+    "closedNote": "Montag & Dienstag geschlossen.",
+    "thankYouTitle": "Vielen Dank!",
+    "thankYouBody": "Wir haben Ihre Reservierungsanfrage erhalten und melden uns in Kürze zur Bestätigung.",
+    "newReservation": "Neue Reservierung"
+  },
   "sections": {
     "whereAndWhen": {
       "title": "Wo & Wann",

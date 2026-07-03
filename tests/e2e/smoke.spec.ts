@@ -38,6 +38,14 @@ test("Reserve a Table page renders", async ({ page }) => {
   ).toBeVisible();
 });
 
+test("reservation form is present on the Reserve page", async ({ page }) => {
+  await page.goto("/de/reserve");
+  await expect(page.getByLabel("Name", { exact: true })).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "Reservierung anfragen" }),
+  ).toBeVisible();
+});
+
 test("home shows the Get to Know Us section", async ({ page }) => {
   await page.goto("/de");
   const about = page.locator("#about");

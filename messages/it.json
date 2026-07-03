@@ -49,6 +49,28 @@
     "openInMaps": "Apri in Google Maps",
     "mapTitle": "Mappa"
   },
+  "reservation": {
+    "intro": "Prenota il tuo tavolo — ti aspettiamo.",
+    "nameLabel": "Nome",
+    "emailLabel": "Email",
+    "phoneLabel": "Telefono (opzionale)",
+    "dateLabel": "Data",
+    "datePlaceholder": "Scegli una data",
+    "timeLabel": "Orario",
+    "timePlaceholder": "Scegli un orario",
+    "guestsLabel": "Persone",
+    "guestsPlaceholder": "Scegli il numero",
+    "guestsOption": "{count, plural, one {# persona} other {# persone}}",
+    "notesLabel": "Note (opzionale)",
+    "notesPlaceholder": "Allergie, occasione, seggiolone …",
+    "submit": "Richiedi prenotazione",
+    "submitting": "Invio in corso …",
+    "error": "Compila correttamente tutti i campi obbligatori.",
+    "closedNote": "Lunedì e martedì chiuso.",
+    "thankYouTitle": "Grazie!",
+    "thankYouBody": "Abbiamo ricevuto la tua richiesta di prenotazione e ti risponderemo a breve per confermare.",
+    "newReservation": "Nuova prenotazione"
+  },
   "sections": {
     "whereAndWhen": {
       "title": "Dove e quando",

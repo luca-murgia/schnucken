@@ -101,25 +101,27 @@ export default async function HomePage({
       </section>
 
       {/* Discover our house */}
-      <section className="mx-auto max-w-6xl px-5 py-16 md:px-6 md:py-24">
-        <h2 className="text-3xl font-semibold text-ink">
-          {t("home.sectionsTitle")}
-        </h2>
-        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {sections.map((s) => (
-            <Link key={s.key} href={s.href} className="group">
-              <Card className="h-full transition-colors group-hover:border-espresso/30 group-hover:bg-blush/50">
-                <CardHeader>
-                  <CardTitle className="text-xl text-espresso">
-                    {t(`nav.${s.key}`)}
-                  </CardTitle>
-                  <CardDescription>
-                    {t(`sections.${s.key}.intro`)}
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            </Link>
-          ))}
+      <section className="bg-oat">
+        <div className="mx-auto max-w-6xl px-5 py-16 md:px-6 md:py-24">
+          <h2 className="text-3xl font-semibold text-ink">
+            {t("home.sectionsTitle")}
+          </h2>
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {sections.map((s) => (
+              <Link key={s.key} href={s.href} className="group">
+                <Card className="h-full transition-colors group-hover:border-espresso/30 group-hover:bg-blush/50">
+                  <CardHeader>
+                    <CardTitle className="text-xl text-espresso">
+                      {t(`nav.${s.key}`)}
+                    </CardTitle>
+                    <CardDescription>
+                      {t(`sections.${s.key}.intro`)}
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </>
