@@ -9,6 +9,7 @@
     "about": "Über uns",
     "whereAndWhen": "Wo & Wann",
     "menu": "Speisekarte",
+    "reserveTable": "Tisch reservieren",
     "findUs": "So finden Sie uns",
     "contact": "Kontakt",
     "reviews": "Bewertung abgeben",
@@ -61,6 +62,10 @@
     "menu": {
       "title": "Speisekarte",
       "intro": "Unsere saisonale Karte mit Vorspeisen, Hauptgerichten und Desserts. Inhalt folgt in Kürze."
+    },
+    "reserveTable": {
+      "title": "Tisch reservieren",
+      "intro": "Reservieren Sie Ihren Tisch bei uns. Buchung folgt in Kürze."
     },
     "findUs": {
       "title": "So finden Sie uns",

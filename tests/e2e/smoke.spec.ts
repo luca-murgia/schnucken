@@ -31,6 +31,13 @@ test("section routes render (menu)", async ({ page }) => {
   );
 });
 
+test("Reserve a Table page renders", async ({ page }) => {
+  await page.goto("/de/reserve");
+  await expect(
+    page.getByRole("heading", { level: 1, name: "Tisch reservieren" }),
+  ).toBeVisible();
+});
+
 test("home shows the Get to Know Us section", async ({ page }) => {
   await page.goto("/de");
   const about = page.locator("#about");

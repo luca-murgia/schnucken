@@ -9,6 +9,7 @@
     "about": "Chi siamo",
     "whereAndWhen": "Dove e quando",
     "menu": "Il nostro menu",
+    "reserveTable": "Prenota un tavolo",
     "findUs": "Come trovarci",
     "contact": "Contattaci",
     "reviews": "Lascia una recensione",
@@ -61,6 +62,10 @@
     "menu": {
       "title": "Il nostro menu",
       "intro": "Il nostro menu di stagione con antipasti, primi e dolci. Contenuto in arrivo."
+    },
+    "reserveTable": {
+      "title": "Prenota un tavolo",
+      "intro": "Prenota il tuo tavolo da noi. Prenotazione in arrivo."
     },
     "findUs": {
       "title": "Come trovarci",
