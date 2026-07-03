@@ -54,6 +54,17 @@ test("header 'Über uns' opens the home about section", async ({ page }) => {
   ).toBeVisible();
 });
 
+test("home shows the opening times", async ({ page }) => {
+  await page.goto("/de");
+  const hours = page.locator("#opening-times");
+  await expect(
+    hours.getByRole("heading", { name: "Öffnungszeiten" }),
+  ).toBeVisible();
+  await expect(hours).toContainText("Montag");
+  await expect(hours).toContainText("Geschlossen");
+  await expect(hours).toContainText("17:00 – 22:00");
+});
+
 test("language switcher changes locale and preserves the page", async ({
   page,
 }) => {

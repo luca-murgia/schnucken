@@ -25,6 +25,21 @@
     "sectionsTitle": "Discover our house",
     "aboutHeading": "Lovely to have you here"
   },
+  "openingHours": {
+    "eyebrow": "Visit us",
+    "title": "Opening Times",
+    "closed": "Closed",
+    "kitchen": "Kitchen",
+    "days": {
+      "mon": "Monday",
+      "tue": "Tuesday",
+      "wed": "Wednesday",
+      "thu": "Thursday",
+      "fri": "Friday",
+      "sat": "Saturday",
+      "sun": "Sunday"
+    }
+  },
   "sections": {
     "about": {
       "title": "Get to Know Us",

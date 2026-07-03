@@ -25,6 +25,21 @@
     "sectionsTitle": "Entdecken Sie unser Haus",
     "aboutHeading": "Schön, dass ihr da seid"
   },
+  "openingHours": {
+    "eyebrow": "Besuch uns",
+    "title": "Öffnungszeiten",
+    "closed": "Geschlossen",
+    "kitchen": "Küche",
+    "days": {
+      "mon": "Montag",
+      "tue": "Dienstag",
+      "wed": "Mittwoch",
+      "thu": "Donnerstag",
+      "fri": "Freitag",
+      "sat": "Samstag",
+      "sun": "Sonntag"
+    }
+  },
   "sections": {
     "about": {
       "title": "Über uns",

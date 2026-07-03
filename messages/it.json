@@ -25,6 +25,21 @@
     "sectionsTitle": "Scoprite la nostra casa",
     "aboutHeading": "Che bello avervi qui"
   },
+  "openingHours": {
+    "eyebrow": "Vieni a trovarci",
+    "title": "Orari di apertura",
+    "closed": "Chiuso",
+    "kitchen": "Cucina",
+    "days": {
+      "mon": "Lunedì",
+      "tue": "Martedì",
+      "wed": "Mercoledì",
+      "thu": "Giovedì",
+      "fri": "Venerdì",
+      "sat": "Sabato",
+      "sun": "Domenica"
+    }
+  },
   "sections": {
     "about": {
       "title": "Chi siamo",
