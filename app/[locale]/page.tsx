@@ -52,13 +52,13 @@ export default async function HomePage({
 
           <div className="md:order-last">
             <Image
-              src="/schnucken-hero.jpg"
+              src="/schnucken-hero.svg"
               alt={t("nav.brand")}
-              width={1333}
-              height={667}
+              width={545}
+              height={513}
               priority
-              sizes="(min-width: 768px) 50vw, 100vw"
-              className="h-auto w-full"
+              unoptimized
+              className="mx-auto h-auto w-full max-w-md"
             />
           </div>
         </div>
