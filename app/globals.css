@@ -172,3 +172,19 @@
     @apply font-heading;
   }
 }
+
+/* Cream halo/stroke so dark text stays legible over the hero illustration.
+   paint-order keeps the fill crisp; the stroke reads as an outer halo. */
+@utility text-outline {
+  color: var(--ink);
+  paint-order: stroke fill;
+  -webkit-text-stroke: 5px var(--cream);
+  text-shadow: 0 2px 12px rgb(62 46 38 / 0.18);
+}
+
+@utility text-outline-sm {
+  color: var(--ink);
+  paint-order: stroke fill;
+  -webkit-text-stroke: 2.5px var(--cream);
+  text-shadow: 0 1px 6px rgb(62 46 38 / 0.14);
+}
