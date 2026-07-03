@@ -1,7 +1,7 @@
 "use client";
 
 import { Globe } from "lucide-react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { routing } from "@/i18n/routing";
 import { usePathname, useRouter } from "@/i18n/navigation";
@@ -21,13 +21,20 @@ const LABELS: Record<string, string> = {
 
 export function LanguageSwitcher() {
   const locale = useLocale();
+  const t = useTranslations("nav");
   const pathname = usePathname();
   const router = useRouter();
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="sm" className="gap-1.5">
+        <Button
+          variant="outline"
+          size="sm"
+          className="gap-1.5"
+          aria-label={t("language")}
+          data-testid="language-switcher"
+        >
           <Globe className="size-4" />
           <span className="uppercase">{locale}</span>
         </Button>

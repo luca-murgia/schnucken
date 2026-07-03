@@ -23,6 +23,17 @@ logins (and to deploy), see **[DEPLOY.md](./DEPLOY.md)**.
 | `npm run db:migrate` | Create/update the database schema (needs a real Neon URL) |
 | `npm run db:seed` | Create the admin user |
 | `npm run db:studio` | Browse the database (Prisma Studio) |
+| `npm test` | Unit tests (Vitest) — routing/role logic + i18n key parity |
+| `npm run test:e2e` | End-to-end smoke tests (Playwright, Chromium) |
+
+## Testing
+
+- **Unit** (`npm test`): `tests/unit/` — the pure logic in `lib/access.ts` (locale/route/role decisions) and DE/EN/IT message-key parity. Fast, no server needed.
+- **E2E** (`npm run test:e2e`): `tests/e2e/` — Playwright builds and serves the app on port **3199**, then drives Chromium through locale routing, the language switcher, the `/admin` auth gate, and the cookie banner. First time only, install the browser:
+
+  ```bash
+  npx playwright install chromium
+  ```
 
 ## What's here (Phase 0)
 

@@ -11,6 +11,8 @@ Client demo. **Next.js 16** (App Router, RSC) + TypeScript, deployed to **Vercel
 - `npm run db:migrate` — `prisma migrate dev` (needs a real Neon `DATABASE_URL`)
 - `npm run db:seed` — seed the admin user (reads `SEED_ADMIN_*` from `.env`)
 - `npm run db:studio` — Prisma Studio
+- `npm test` — Vitest unit tests (`tests/unit/`: `lib/access.ts` logic + message-key parity)
+- `npm run test:e2e` — Playwright e2e (`tests/e2e/`); builds + serves on port 3199 (one-time: `npx playwright install chromium`)
 
 ## Stack
 

@@ -10,6 +10,10 @@ import type { NextAuthConfig } from "next-auth";
  * them can run on the Edge runtime that proxy.ts uses.
  */
 export const authConfig = {
+  // Trust the deployment host when building callback URLs. Auto-set on Vercel;
+  // set explicitly so local `next start` and other hosts work too.
+  trustHost: true,
+
   // Credentials logins are NOT persisted by the adapter, so a DB session is
   // never created for them. JWT strategy is REQUIRED here (see the caveat).
   session: { strategy: "jwt" },
