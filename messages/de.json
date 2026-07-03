@@ -7,6 +7,7 @@
     "brand": "Das Schnucken",
     "home": "Startseite",
     "about": "Über uns",
+    "whereAndWhen": "Wo & Wann",
     "menu": "Speisekarte",
     "findUs": "So finden Sie uns",
     "contact": "Kontakt",
@@ -40,7 +41,18 @@
       "sun": "Sonntag"
     }
   },
+  "location": {
+    "title": "So finden Sie uns",
+    "showMap": "Karte anzeigen",
+    "mapConsent": "Beim Laden der Karte werden Daten an Google übertragen.",
+    "openInMaps": "In Google Maps öffnen",
+    "mapTitle": "Karte"
+  },
   "sections": {
+    "whereAndWhen": {
+      "title": "Wo & Wann",
+      "intro": "Öffnungszeiten und Anfahrt – hier findet ihr uns."
+    },
     "about": {
       "title": "Über uns",
       "intro": "Lernen Sie unser Bistro, unser Team und unsere Geschichte kennen.",
@@ -56,7 +68,7 @@
     },
     "contact": {
       "title": "Kontakt",
-      "intro": "Schreiben Sie uns eine Nachricht oder rufen Sie uns an. Inhalt folgt in Kürze."
+      "intro": "Schreiben Sie uns, rufen Sie uns an oder kommen Sie einfach vorbei."
     },
     "reviews": {
       "title": "Bewertung abgeben",
@@ -112,5 +124,16 @@
   "common": {
     "comingSoon": "Inhalt folgt",
     "backHome": "Zurück zur Startseite"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "intro": "Wir freuen uns, von Ihnen zu hören. Reservieren Sie einen Tisch, fragen Sie nach der Karte oder sagen Sie einfach Hallo.",
+    "addressLabel": "So finden Sie uns",
+    "emailLabel": "Schreiben Sie uns",
+    "phoneLabel": "Rufen Sie uns an",
+    "followLabel": "Folgen Sie uns",
+    "vatLabel": "USt-IdNr.",
+    "getDirections": "Route planen",
+    "country": "Deutschland"
   }
 }

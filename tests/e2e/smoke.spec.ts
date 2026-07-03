@@ -40,29 +40,26 @@ test("home shows the Get to Know Us section", async ({ page }) => {
   await expect(about).toContainText("David, Till");
 });
 
-test("header 'Über uns' opens the home about section", async ({ page }) => {
-  await page.goto("/de/menu");
+test("header 'Wo & Wann' opens the Where and When page", async ({ page }) => {
+  await page.goto("/de");
   await page
     .locator("header")
-    .getByRole("link", { name: "Über uns" })
+    .getByRole("link", { name: "Wo & Wann" })
     .click();
-  await expect(page).toHaveURL(/#about$/);
+  await expect(page).toHaveURL(/\/de\/where-and-when$/);
   await expect(
-    page.locator("#about").getByRole("heading", {
-      name: "Schön, dass ihr da seid",
-    }),
+    page.getByRole("heading", { level: 1, name: "Wo & Wann" }),
   ).toBeVisible();
 });
 
-test("home shows the opening times", async ({ page }) => {
-  await page.goto("/de");
-  const hours = page.locator("#opening-times");
+test("Where and When page shows the hours and address", async ({ page }) => {
+  await page.goto("/de/where-and-when");
   await expect(
-    hours.getByRole("heading", { name: "Öffnungszeiten" }),
+    page.getByRole("heading", { name: "Öffnungszeiten" }),
   ).toBeVisible();
-  await expect(hours).toContainText("Montag");
-  await expect(hours).toContainText("Geschlossen");
-  await expect(hours).toContainText("17:00 – 22:00");
+  await expect(page.getByText("Montag")).toBeVisible();
+  await expect(page.getByText("17:00 – 22:00")).toBeVisible();
+  await expect(page.getByText(/Elfbuchenstraße 18/)).toBeVisible();
 });
 
 test("language switcher changes locale and preserves the page", async ({

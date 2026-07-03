@@ -6,7 +6,6 @@ import { sections } from "@/lib/nav";
 export async function SiteFooter() {
   const tNav = await getTranslations("nav");
   const tFoot = await getTranslations("footer");
-  const tHours = await getTranslations("openingHours");
   const year = new Date().getFullYear();
 
   return (
@@ -36,14 +35,6 @@ export async function SiteFooter() {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link
-                href="/#opening-times"
-                className="text-cream/80 transition-colors hover:text-cream"
-              >
-                {tHours("title")}
-              </Link>
-            </li>
           </ul>
         </div>
 

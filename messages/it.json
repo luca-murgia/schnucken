@@ -7,6 +7,7 @@
     "brand": "Das Schnucken",
     "home": "Home",
     "about": "Chi siamo",
+    "whereAndWhen": "Dove e quando",
     "menu": "Il nostro menu",
     "findUs": "Come trovarci",
     "contact": "Contattaci",
@@ -40,7 +41,18 @@
       "sun": "Domenica"
     }
   },
+  "location": {
+    "title": "Come trovarci",
+    "showMap": "Mostra la mappa",
+    "mapConsent": "Caricando la mappa vengono inviati dati a Google.",
+    "openInMaps": "Apri in Google Maps",
+    "mapTitle": "Mappa"
+  },
   "sections": {
+    "whereAndWhen": {
+      "title": "Dove e quando",
+      "intro": "Orari e come raggiungerci — ci trovate qui."
+    },
     "about": {
       "title": "Chi siamo",
       "intro": "Conoscete il nostro bistrò, il nostro team e la nostra storia.",
@@ -56,7 +68,7 @@
     },
     "contact": {
       "title": "Contattaci",
-      "intro": "Inviateci un messaggio o chiamateci. Contenuto in arrivo."
+      "intro": "Scriveteci, chiamateci o passate semplicemente a trovarci."
     },
     "reviews": {
       "title": "Lascia una recensione",
@@ -112,5 +124,16 @@
   "common": {
     "comingSoon": "Contenuto in arrivo",
     "backHome": "Torna alla home"
+  },
+  "contact": {
+    "eyebrow": "Contatti",
+    "intro": "Ci farebbe piacere sentirvi. Prenotate un tavolo, chiedeteci del menù o semplicemente salutateci.",
+    "addressLabel": "Dove siamo",
+    "emailLabel": "Scriveteci",
+    "phoneLabel": "Chiamateci",
+    "followLabel": "Seguiteci",
+    "vatLabel": "Partita IVA",
+    "getDirections": "Come arrivare",
+    "country": "Germania"
   }
 }

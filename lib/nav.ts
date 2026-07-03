@@ -1,12 +1,11 @@
-// Central list of the public site sections. `key` maps to a translation key in
-// the `nav` / `sections` namespaces; `href` is locale-agnostic (the next-intl
-// <Link> adds the /de|/en|/it prefix).
-export type SectionKey = "about" | "menu" | "findUs" | "contact" | "reviews";
+// Primary nav sections — used by the header, mobile menu, footer, and the home
+// "Discover" cards. "Get to Know Us" lives inline on the home page (no nav
+// entry); "Where & When" (hours + location) has its own route.
+export type SectionKey = "whereAndWhen" | "menu" | "contact" | "reviews";
 
 export const sections: { key: SectionKey; href: string }[] = [
-  { key: "about", href: "/#about" },
+  { key: "whereAndWhen", href: "/where-and-when" },
   { key: "menu", href: "/menu" },
-  { key: "findUs", href: "/find-us" },
   { key: "contact", href: "/contact" },
   { key: "reviews", href: "/reviews" },
 ];

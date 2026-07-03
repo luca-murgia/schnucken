@@ -4,7 +4,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { sections } from "@/lib/nav";
 import { getContent } from "@/lib/content";
-import { openingHours } from "@/lib/opening-hours";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -30,9 +29,6 @@ export default async function HomePage({
     t("sections.about.body"),
   );
   const aboutParagraphs = aboutBody.split("\n").filter((p) => p.trim());
-
-  // The section cards cover everything except "About" (shown in full above).
-  const discover = sections.filter((s) => s.key !== "about");
 
   return (
     <>
@@ -104,58 +100,13 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* Opening Times */}
-      <section id="opening-times" className="scroll-mt-24 bg-blush/50">
-        <div className="mx-auto max-w-2xl px-5 py-16 md:px-6 md:py-24">
-          <span className="text-xs font-semibold tracking-[0.18em] text-clay uppercase">
-            {t("openingHours.eyebrow")}
-          </span>
-          <h2 className="mt-3 text-3xl font-semibold text-ink md:text-4xl">
-            {t("openingHours.title")}
-          </h2>
-          <dl className="mt-8 divide-y divide-border/70">
-            {openingHours.map((d) => (
-              <div
-                key={d.key}
-                className="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[9rem_1fr] sm:gap-6"
-              >
-                <dt className="font-medium text-ink">
-                  {t(`openingHours.days.${d.key}`)}
-                </dt>
-                <dd>
-                  {d.closed ? (
-                    <span className="text-muted-foreground">
-                      {t("openingHours.closed")}
-                    </span>
-                  ) : (
-                    <div className="space-y-0.5">
-                      <div className="font-medium text-ink tabular-nums">
-                        {d.hours}
-                      </div>
-                      {d.kitchen?.map((k, i) => (
-                        <div
-                          key={i}
-                          className="text-sm text-muted-foreground tabular-nums"
-                        >
-                          {t("openingHours.kitchen")} · {k}
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      </section>
-
       {/* Discover our house */}
       <section className="mx-auto max-w-6xl px-5 py-16 md:px-6 md:py-24">
         <h2 className="text-3xl font-semibold text-ink">
           {t("home.sectionsTitle")}
         </h2>
         <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {discover.map((s) => (
+          {sections.map((s) => (
             <Link key={s.key} href={s.href} className="group">
               <Card className="h-full transition-colors group-hover:border-espresso/30 group-hover:bg-blush/50">
                 <CardHeader>

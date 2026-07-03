@@ -7,6 +7,7 @@
     "brand": "Das Schnucken",
     "home": "Home",
     "about": "Get to Know Us",
+    "whereAndWhen": "Where & When",
     "menu": "Our Menu",
     "findUs": "How to Find Us",
     "contact": "Contact Us",
@@ -40,7 +41,18 @@
       "sun": "Sunday"
     }
   },
+  "location": {
+    "title": "How to Find Us",
+    "showMap": "Show map",
+    "mapConsent": "Loading the map sends data to Google.",
+    "openInMaps": "Open in Google Maps",
+    "mapTitle": "Map"
+  },
   "sections": {
+    "whereAndWhen": {
+      "title": "Where & When",
+      "intro": "Opening times and directions — find us here."
+    },
     "about": {
       "title": "Get to Know Us",
       "intro": "Meet our bistro, our team, and our story.",
@@ -56,7 +68,7 @@
     },
     "contact": {
       "title": "Contact Us",
-      "intro": "Send us a message or give us a call. Content coming soon."
+      "intro": "Send us a message, give us a call, or simply drop by."
     },
     "reviews": {
       "title": "Leave a Review",
@@ -112,5 +124,16 @@
   "common": {
     "comingSoon": "Content coming soon",
     "backHome": "Back to home"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "intro": "We would love to hear from you. Tell us what you think, or simply say hello.",
+    "addressLabel": "Find us",
+    "emailLabel": "E-mail us",
+    "phoneLabel": "Call us",
+    "followLabel": "Follow us",
+    "vatLabel": "VAT number",
+    "getDirections": "Get directions",
+    "country": "Germany"
   }
 }
