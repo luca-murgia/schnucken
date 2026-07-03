@@ -4,7 +4,7 @@
 export type SectionKey = "about" | "menu" | "findUs" | "contact" | "reviews";
 
 export const sections: { key: SectionKey; href: string }[] = [
-  { key: "about", href: "/about" },
+  { key: "about", href: "/#about" },
   { key: "menu", href: "/menu" },
   { key: "findUs", href: "/find-us" },
   { key: "contact", href: "/contact" },

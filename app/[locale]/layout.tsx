@@ -55,7 +55,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       className={cn(
-        "h-full antialiased",
+        "h-full antialiased motion-safe:scroll-smooth",
         fraunces.variable,
         inter.variable,
         "font-sans",

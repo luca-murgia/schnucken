@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { Link } from "@/i18n/navigation";
 import { sections } from "@/lib/nav";
+import { getContent } from "@/lib/content";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -19,6 +20,18 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations();
+
+  // "Get to Know Us" story — editable via the admin content editor, falls back
+  // to the message catalog when the DB isn't wired.
+  const aboutBody = await getContent(
+    "about.body",
+    locale,
+    t("sections.about.body"),
+  );
+  const aboutParagraphs = aboutBody.split("\n").filter((p) => p.trim());
+
+  // The section cards cover everything except "About" (shown in full above).
+  const discover = sections.filter((s) => s.key !== "about");
 
   return (
     <>
@@ -64,13 +77,39 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* Section cards */}
+      {/* Get to Know Us */}
+      <section id="about" className="scroll-mt-24 bg-cream">
+        <div className="mx-auto max-w-3xl px-4 py-16 md:px-6 md:py-24">
+          <span className="text-xs font-semibold tracking-[0.18em] text-clay uppercase">
+            {t("nav.about")}
+          </span>
+          <h2 className="mt-3 text-3xl font-semibold text-ink md:text-4xl">
+            {t("home.aboutHeading")}
+          </h2>
+          <div className="mt-7 space-y-5 text-lg leading-relaxed text-ink/80">
+            {aboutParagraphs.map((para, i) => (
+              <p
+                key={i}
+                className={
+                  i === aboutParagraphs.length - 1
+                    ? "font-medium text-ink italic"
+                    : undefined
+                }
+              >
+                {para}
+              </p>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Discover our house */}
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
         <h2 className="text-3xl font-semibold text-ink">
           {t("home.sectionsTitle")}
         </h2>
         <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {sections.map((s) => (
+          {discover.map((s) => (
             <Link key={s.key} href={s.href} className="group">
               <Card className="h-full transition-colors group-hover:border-espresso/30 group-hover:bg-blush/50">
                 <CardHeader>

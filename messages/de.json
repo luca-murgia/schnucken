@@ -22,12 +22,14 @@
     "subtitle": "Saisonale Küche, gemütliche Atmosphäre und ein Ort zum Verweilen. Entdecken Sie unser Haus.",
     "ctaMenu": "Speisekarte ansehen",
     "ctaContact": "Kontakt aufnehmen",
-    "sectionsTitle": "Entdecken Sie unser Haus"
+    "sectionsTitle": "Entdecken Sie unser Haus",
+    "aboutHeading": "Schön, dass ihr da seid"
   },
   "sections": {
     "about": {
       "title": "Über uns",
-      "intro": "Lernen Sie unser Bistro, unser Team und unsere Geschichte kennen. Inhalt folgt in Kürze."
+      "intro": "Lernen Sie unser Bistro, unser Team und unsere Geschichte kennen.",
+      "body": "Vor langer Zeit reifte eine Idee: ein eigener Ort des Zusammenkommens, des Teilens und des Wachsens. Wir sind gewachsen, haben eine intensive Anfangsphase gemeistert und möchten diesen Ort jetzt mit euch teilen.\nWir – David, Till und unser tolles Team – haben uns gefunden, um dem Vorderen Westen etwas zurückzugeben: diesem schönen Teil Kassels eine kulinarische Alternative zu bieten, um mit euch zu schnucken.\n„Schnucken“ steht in der nordhessischen Mundart für Naschen und Genießen – genau das wollen wir in unserem Bistro mit euch erleben. Stellt euch die Tische voll, teilt miteinander, kommt ins Gespräch und verbringt einen schönen Abend mit uns. Für uns bedeutet ein gelungener Abend: aufregend, bunt und voller neuer Eindrücke. Genau das bringen wir auf die Teller und in die Gläser – genussvolle Momente, verbunden mit einer lockeren, einladenden Atmosphäre und netten Menschen: mit euch.\nWir wollen unsere Freude am Schnucken mit euch teilen – mit spannenden Naturweinen, Drinks und einer sich stetig wechselnden Karte.\nKommt vorbei und lasst uns zusammenkommen, neue Momente teilen, miteinander wachsen und genießen … lasst uns gemeinsam schnucken!\nEuer Schnucken-Team"
     },
     "menu": {
       "title": "Speisekarte",

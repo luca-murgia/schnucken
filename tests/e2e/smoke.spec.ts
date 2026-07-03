@@ -31,13 +31,27 @@ test("section routes render (menu)", async ({ page }) => {
   );
 });
 
-test("about page renders editable content (catalog fallback when no DB)", async ({
-  page,
-}) => {
-  await page.goto("/de/about");
-  await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "Über uns",
-  );
+test("home shows the Get to Know Us section", async ({ page }) => {
+  await page.goto("/de");
+  const about = page.locator("#about");
+  await expect(
+    about.getByRole("heading", { name: "Schön, dass ihr da seid" }),
+  ).toBeVisible();
+  await expect(about).toContainText("David, Till");
+});
+
+test("header 'Über uns' opens the home about section", async ({ page }) => {
+  await page.goto("/de/menu");
+  await page
+    .locator("header")
+    .getByRole("link", { name: "Über uns" })
+    .click();
+  await expect(page).toHaveURL(/#about$/);
+  await expect(
+    page.locator("#about").getByRole("heading", {
+      name: "Schön, dass ihr da seid",
+    }),
+  ).toBeVisible();
 });
 
 test("language switcher changes locale and preserves the page", async ({

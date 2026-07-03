@@ -22,12 +22,14 @@
     "subtitle": "Cucina di stagione, un'atmosfera accogliente e un luogo dove fermarsi. Scoprite la nostra casa.",
     "ctaMenu": "Vedi il menu",
     "ctaContact": "Contattaci",
-    "sectionsTitle": "Scoprite la nostra casa"
+    "sectionsTitle": "Scoprite la nostra casa",
+    "aboutHeading": "Che bello avervi qui"
   },
   "sections": {
     "about": {
       "title": "Chi siamo",
-      "intro": "Conoscete il nostro bistrò, il nostro team e la nostra storia. Contenuto in arrivo."
+      "intro": "Conoscete il nostro bistrò, il nostro team e la nostra storia.",
+      "body": "Molto tempo fa nacque un'idea: un luogo tutto nostro dove ritrovarsi, condividere e crescere. Siamo cresciuti, abbiamo superato un inizio intenso e ora vogliamo condividere questo luogo con voi.\nNoi — David, Till e il nostro fantastico team — ci siamo trovati per restituire qualcosa al Vorderer Westen: offrire a questa bella parte di Kassel un'alternativa culinaria, per schnucken insieme a voi.\n«Schnucken» nel dialetto dell'Assia settentrionale significa sgranocchiare e assaporare — ed è proprio questo che vogliamo vivere con voi nel nostro bistrò. Riempite i tavoli, condividete, chiacchierate e trascorrete una bella serata con noi. Per noi una serata riuscita è: entusiasmante, colorata e piena di nuove impressioni. È esattamente ciò che portiamo nei piatti e nei bicchieri — momenti di piacere, uniti a un'atmosfera rilassata e accogliente e a persone simpatiche: con voi.\nVogliamo condividere con voi la nostra gioia dello schnucken — con vini naturali sorprendenti, drink e una carta in continuo cambiamento.\nPassate a trovarci e ritroviamoci, condividiamo nuovi momenti, cresciamo insieme e assaporiamo … facciamo schnucken insieme!\nIl vostro team Schnucken"
     },
     "menu": {
       "title": "Il nostro menu",

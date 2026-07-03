@@ -31,10 +31,10 @@ export async function saveContent(
       });
     }
 
-    // "about.body" is shown on /[locale]/about — refresh each locale's page.
+    // "about.body" is shown on the home page (/[locale]) — refresh each locale.
     if (key === "about.body") {
       for (const locale of routing.locales) {
-        revalidatePath(`/${locale}/about`);
+        revalidatePath(`/${locale}`);
       }
     }
     return "saved";
