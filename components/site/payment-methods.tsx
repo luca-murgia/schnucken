@@ -102,7 +102,7 @@ export async function PaymentMethods() {
       <div className="text-xs font-semibold tracking-wider text-cream/60 uppercase">
         {t("heading")}
       </div>
-      <ul className="mt-3 flex flex-wrap gap-2">
+      <ul className="mt-3 grid w-fit grid-cols-3 gap-2">
         {items.map((it) => (
           <li
             key={it.label}
