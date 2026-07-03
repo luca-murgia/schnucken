@@ -17,7 +17,7 @@ export default async function AdminPage() {
       <p className="text-lg">{t("welcome")} 👋</p>
       <Card>
         <CardHeader>
-          <CardTitle className="text-forest">{t("title")}</CardTitle>
+          <CardTitle className="text-espresso">{t("title")}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <p className="text-muted-foreground">{t("contentEditing")}</p>

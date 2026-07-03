@@ -12,7 +12,7 @@ type Props = {
 export function PagePlaceholder({ title, intro, comingSoon, back }: Props) {
   return (
     <section className="mx-auto max-w-4xl px-4 py-20 md:px-6 md:py-28">
-      <span className="text-xs font-semibold tracking-[0.18em] text-walnut uppercase">
+      <span className="text-xs font-semibold tracking-[0.18em] text-clay uppercase">
         {comingSoon}
       </span>
       <h1 className="mt-3 text-4xl font-semibold text-ink md:text-5xl">

@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Bistro",
-    "description": "Un bistrò tedesco — accogliente, di stagione, cucinato con amore."
+    "title": "Das Schnucken",
+    "description": "Das Schnucken — un locale accogliente: di stagione, conviviale, cucinato con amore."
   },
   "nav": {
-    "brand": "Bistro",
+    "brand": "Das Schnucken",
     "home": "Home",
     "about": "Chi siamo",
     "menu": "Il nostro menu",
@@ -18,7 +18,7 @@
   },
   "home": {
     "eyebrow": "Benvenuti",
-    "title": "Benvenuti nel nostro bistrò",
+    "title": "Benvenuti da Das Schnucken",
     "subtitle": "Cucina di stagione, un'atmosfera accogliente e un luogo dove fermarsi. Scoprite la nostra casa.",
     "ctaMenu": "Vedi il menu",
     "ctaContact": "Contattaci",
@@ -74,7 +74,7 @@
     }
   },
   "footer": {
-    "tagline": "Un bistrò tedesco — accogliente, di stagione, cucinato con amore.",
+    "tagline": "Das Schnucken — un locale accogliente: di stagione, conviviale, cucinato con amore.",
     "sectionsHeading": "Scopri",
     "legalHeading": "Note legali",
     "impressum": "Note legali",

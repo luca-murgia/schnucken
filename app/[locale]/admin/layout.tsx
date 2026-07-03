@@ -25,7 +25,7 @@ export default async function AdminLayout({
     <div className="mx-auto max-w-6xl px-4 py-10 md:px-6">
       <div className="flex flex-col gap-4 border-b border-border pb-6 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-2xl text-forest">{t("title")}</h1>
+          <h1 className="text-2xl text-espresso">{t("title")}</h1>
           <p className="mt-1 text-sm text-muted-foreground">
             {t("signedInAs")}: {session.user.email} · {t("role")}:{" "}
             {session.user.role}

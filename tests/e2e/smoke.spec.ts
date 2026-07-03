@@ -15,7 +15,7 @@ test.describe("with a German-preferring browser", () => {
 test("each locale renders its own hero", async ({ page }) => {
   await page.goto("/en");
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "Welcome to our bistro",
+    "Welcome to Das Schnucken",
   );
 
   await page.goto("/it");

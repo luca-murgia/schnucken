@@ -49,7 +49,7 @@ export function ContentEditor({
           {pending ? t("saving") : t("save")}
         </Button>
         {state === "saved" && (
-          <span className="text-sm text-forest">{t("saved")}</span>
+          <span className="text-sm text-espresso">{t("saved")}</span>
         )}
         {state === "error" && (
           <span className="text-sm text-destructive">{t("error")}</span>

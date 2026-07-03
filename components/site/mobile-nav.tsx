@@ -32,7 +32,7 @@ export function MobileNav() {
       </SheetTrigger>
       <SheetContent side="right" className="w-72 bg-cream">
         <SheetHeader>
-          <SheetTitle className="font-heading text-forest">
+          <SheetTitle className="font-heading text-espresso">
             {t("brand")}
           </SheetTitle>
         </SheetHeader>
@@ -42,7 +42,7 @@ export function MobileNav() {
             <SheetClose asChild key={s.key}>
               <Link
                 href={s.href}
-                className="rounded-md px-3 py-2 text-base font-medium text-ink/80 transition-colors hover:bg-oat hover:text-forest"
+                className="rounded-md px-3 py-2 text-base font-medium text-ink/80 transition-colors hover:bg-oat hover:text-espresso"
               >
                 {t(s.key)}
               </Link>
@@ -51,7 +51,7 @@ export function MobileNav() {
           <SheetClose asChild>
             <Link
               href="/login"
-              className="mt-2 rounded-md bg-forest px-3 py-2 text-center text-base font-medium text-cream transition-colors hover:bg-forest/90"
+              className="mt-2 rounded-md bg-espresso px-3 py-2 text-center text-base font-medium text-cream transition-colors hover:bg-espresso/90"
             >
               {t("login")}
             </Link>

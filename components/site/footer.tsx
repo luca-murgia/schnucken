@@ -9,7 +9,7 @@ export async function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border bg-walnut text-cream">
+    <footer className="border-t border-border bg-espresso text-cream">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-3 md:px-6">
         <div>
           <div className="font-heading text-lg font-semibold">

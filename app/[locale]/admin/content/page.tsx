@@ -25,7 +25,7 @@ export default async function AdminContentPage({
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-xl text-forest">{t("content.title")}</h2>
+        <h2 className="text-xl text-espresso">{t("content.title")}</h2>
         <p className="mt-1 text-sm text-muted-foreground">
           {t("content.subtitle")}
         </p>

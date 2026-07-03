@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Bistro",
-    "description": "A German bistro — warm, seasonal, cooked with love."
+    "title": "Das Schnucken",
+    "description": "Das Schnucken — a warm local eatery: seasonal, cosy, cooked with love."
   },
   "nav": {
-    "brand": "Bistro",
+    "brand": "Das Schnucken",
     "home": "Home",
     "about": "Get to Know Us",
     "menu": "Our Menu",
@@ -18,7 +18,7 @@
   },
   "home": {
     "eyebrow": "Welcome",
-    "title": "Welcome to our bistro",
+    "title": "Welcome to Das Schnucken",
     "subtitle": "Seasonal cooking, a cosy atmosphere, and a place to linger. Discover our house.",
     "ctaMenu": "View the menu",
     "ctaContact": "Get in touch",
@@ -74,7 +74,7 @@
     }
   },
   "footer": {
-    "tagline": "A German bistro — warm, seasonal, cooked with love.",
+    "tagline": "Das Schnucken — a warm local eatery: seasonal, cosy, cooked with love.",
     "sectionsHeading": "Discover",
     "legalHeading": "Legal",
     "impressum": "Imprint",

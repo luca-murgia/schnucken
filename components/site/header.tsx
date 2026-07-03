@@ -14,7 +14,7 @@ export async function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 md:px-6">
         <Link
           href="/"
-          className="font-heading text-xl font-semibold tracking-tight text-forest"
+          className="font-heading text-xl font-semibold tracking-tight text-espresso"
         >
           {t("brand")}
         </Link>
@@ -24,7 +24,7 @@ export async function SiteHeader() {
             <Link
               key={s.key}
               href={s.href}
-              className="text-sm font-medium text-ink/75 transition-colors hover:text-forest"
+              className="text-sm font-medium text-ink/75 transition-colors hover:text-espresso"
             >
               {t(s.key)}
             </Link>

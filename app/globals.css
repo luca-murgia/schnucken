@@ -14,15 +14,15 @@
   --font-heading: var(--font-fraunces);
   --font-mono: var(--font-mono-stack);
 
-  /* Brand tokens -> utilities: bg-forest, text-cream, border-walnut, etc. */
-  --color-forest: var(--forest);
-  --color-forest-foreground: var(--forest-foreground);
-  --color-walnut: var(--walnut);
-  --color-walnut-foreground: var(--walnut-foreground);
-  --color-amber: var(--amber);
-  --color-amber-foreground: var(--amber-foreground);
-  --color-terracotta: var(--terracotta);
-  --color-sage: var(--sage);
+  /* Brand tokens -> utilities: bg-rose, text-espresso, bg-clay, etc. */
+  --color-rose: var(--rose);
+  --color-rose-foreground: var(--rose-foreground);
+  --color-rose-deep: var(--rose-deep);
+  --color-blush: var(--blush);
+  --color-espresso: var(--espresso);
+  --color-espresso-foreground: var(--espresso-foreground);
+  --color-clay: var(--clay);
+  --color-clay-foreground: var(--clay-foreground);
   --color-cream: var(--cream);
   --color-oat: var(--oat);
   --color-ink: var(--ink);
@@ -70,90 +70,90 @@
   --radius: 0.625rem;
   --font-mono-stack: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
 
-  /* --- Waldküche brand palette (literal, WCAG AA+ verified) --- */
-  --forest: #34503a;
-  --forest-foreground: #faf6ee;
-  --walnut: #6b4a34;
-  --walnut-foreground: #faf6ee;
-  --amber: #c9962e;
-  --amber-foreground: #2a2118;
-  --terracotta: #b4552d;
-  --sage: #7c8b5a;
-  --cream: #faf6ee;
-  --oat: #efe7d8;
-  --ink: #2a2118;
-  --taupe: #8a7e6d;
+  /* --- Schnucken Rosé brand palette (from the hero illustration) --- */
+  --rose: #d8b3ab; /* dusty rose = the illustration's ground */
+  --rose-foreground: #3e2e26; /* espresso ink on rose */
+  --rose-deep: #c48f86;
+  --blush: #f0ded8;
+  --espresso: #3e2e26; /* the illustration's line colour */
+  --espresso-foreground: #fbf4f0;
+  --clay: #b26a50; /* warm terracotta accent */
+  --clay-foreground: #fbf4f0;
+  --cream: #fbf4f0;
+  --oat: #efe2db;
+  --ink: #3e2e26;
+  --taupe: #8c7268;
 
   /* --- Semantic tokens (light) --- */
-  --background: #faf6ee;
-  --foreground: #2a2118;
-  --card: #fffdf7;
-  --card-foreground: #2a2118;
-  --popover: #fffdf7;
-  --popover-foreground: #2a2118;
-  --primary: #34503a;
-  --primary-foreground: #faf6ee;
-  --secondary: #efe7d8;
-  --secondary-foreground: #2a2118;
-  --muted: #efe7d8;
-  --muted-foreground: #6e6151;
-  --accent: #eae0ce;
-  --accent-foreground: #2a2118;
+  --background: #fbf4f0;
+  --foreground: #3e2e26;
+  --card: #fffcfa;
+  --card-foreground: #3e2e26;
+  --popover: #fffcfa;
+  --popover-foreground: #3e2e26;
+  --primary: #3e2e26;
+  --primary-foreground: #fbf4f0;
+  --secondary: #f0ded8;
+  --secondary-foreground: #3e2e26;
+  --muted: #efe2db;
+  --muted-foreground: #6e574d;
+  --accent: #f0ded8;
+  --accent-foreground: #3e2e26;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #e4dac8;
-  --input: #e4dac8;
-  --ring: #34503a;
-  --chart-1: #34503a;
-  --chart-2: #6b4a34;
-  --chart-3: #c9962e;
-  --chart-4: #7c8b5a;
-  --chart-5: #b4552d;
+  --border: #e7d5ce;
+  --input: #e7d5ce;
+  --ring: #c48f86;
+  --chart-1: #c48f86;
+  --chart-2: #3e2e26;
+  --chart-3: #b26a50;
+  --chart-4: #d8b3ab;
+  --chart-5: #8c7268;
 
-  /* Admin sidebar = deep forest band */
-  --sidebar: #2e4735;
-  --sidebar-foreground: #f1ead9;
-  --sidebar-primary: #c9962e;
-  --sidebar-primary-foreground: #22301f;
-  --sidebar-accent: #3a5a42;
-  --sidebar-accent-foreground: #f5efe3;
-  --sidebar-border: #3a5a42;
-  --sidebar-ring: #c9962e;
+  /* Admin sidebar = deep espresso band */
+  --sidebar: #352720;
+  --sidebar-foreground: #f1e6e0;
+  --sidebar-primary: #d8b3ab;
+  --sidebar-primary-foreground: #352720;
+  --sidebar-accent: #46352c;
+  --sidebar-accent-foreground: #f1e6e0;
+  --sidebar-border: #46352c;
+  --sidebar-ring: #d8b3ab;
 }
 
 .dark {
-  /* --- Nachtwald: dark hero band + admin dark mode --- */
-  --background: #14160f;
-  --foreground: #f5efe3;
-  --card: #1e2618;
-  --card-foreground: #f5efe3;
-  --popover: #1e2618;
-  --popover-foreground: #f5efe3;
-  --primary: #7fb07a;
-  --primary-foreground: #12160e;
-  --secondary: #3e2c21;
-  --secondary-foreground: #f5efe3;
-  --muted: #26301f;
-  --muted-foreground: #b8b2a4;
-  --accent: #33422a;
-  --accent-foreground: #f5efe3;
+  /* --- Deep espresso + rose (dark) --- */
+  --background: #231a15;
+  --foreground: #f3e6e0;
+  --card: #2e221c;
+  --card-foreground: #f3e6e0;
+  --popover: #2e221c;
+  --popover-foreground: #f3e6e0;
+  --primary: #dbaea6;
+  --primary-foreground: #231a15;
+  --secondary: #3a2a22;
+  --secondary-foreground: #f3e6e0;
+  --muted: #2e221c;
+  --muted-foreground: #c3a99f;
+  --accent: #3a2a22;
+  --accent-foreground: #f3e6e0;
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 15%);
-  --ring: #c6a15b;
-  --chart-1: #7fb07a;
-  --chart-2: #c6a15b;
-  --chart-3: #d98e5a;
-  --chart-4: #6e9c6b;
-  --chart-5: #b4552d;
+  --ring: #dbaea6;
+  --chart-1: #dbaea6;
+  --chart-2: #c48f86;
+  --chart-3: #cf8368;
+  --chart-4: #b26a50;
+  --chart-5: #c3a99f;
 
-  --sidebar: #12160e;
-  --sidebar-foreground: #f1ead9;
-  --sidebar-primary: #c6a15b;
-  --sidebar-primary-foreground: #12160e;
-  --sidebar-accent: #26301f;
-  --sidebar-accent-foreground: #f5efe3;
+  --sidebar: #1c1510;
+  --sidebar-foreground: #f1e6e0;
+  --sidebar-primary: #dbaea6;
+  --sidebar-primary-foreground: #1c1510;
+  --sidebar-accent: #2e221c;
+  --sidebar-accent-foreground: #f1e6e0;
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: #c6a15b;
+  --sidebar-ring: #dbaea6;
 }
 
 @layer base {

@@ -1,33 +1,32 @@
-// Waldküche theme for the c15t consent banner + dialog — maps our green/brown
-// palette onto c15t's design tokens. Passed to ConsentManagerProvider's
-// `options.theme`. Light + dark variants mirror app/globals.css.
+// Schnucken Rosé theme for the c15t consent banner + dialog — maps our
+// rose/espresso palette onto c15t's design tokens. Passed to
+// ConsentManagerProvider's `options.theme`. Mirrors app/globals.css.
 export const consentTheme = {
   colors: {
-    primary: "#34503a", // forest
-    primaryHover: "#2a4230",
-    surface: "#fffdf7", // card
-    surfaceHover: "#efe7d8", // oat
-    border: "#e4dac8",
-    borderHover: "#d8ccb5",
-    text: "#2a2118", // ink
-    textMuted: "#6e6151",
-    textOnPrimary: "#faf6ee", // cream
-    switchTrackActive: "#34503a",
+    primary: "#3e2e26", // espresso
+    primaryHover: "#503b31",
+    surface: "#fffcfa", // card
+    surfaceHover: "#f0ded8", // blush
+    border: "#e7d5ce",
+    borderHover: "#d8c2b9",
+    text: "#3e2e26", // ink
+    textMuted: "#6e574d",
+    textOnPrimary: "#fbf4f0", // cream
+    switchTrackActive: "#3e2e26",
   },
   dark: {
-    primary: "#7fb07a",
-    primaryHover: "#8fbd8a",
-    surface: "#1e2618",
-    surfaceHover: "#26301f",
-    border: "#33422a",
-    borderHover: "#3d4f31",
-    text: "#f5efe3",
-    textMuted: "#b8b2a4",
-    textOnPrimary: "#12160e",
-    switchTrackActive: "#7fb07a",
+    primary: "#dbaea6", // rose
+    primaryHover: "#e3bcb4",
+    surface: "#2e221c",
+    surfaceHover: "#3a2a22",
+    border: "#46352c",
+    borderHover: "#52402f",
+    text: "#f3e6e0",
+    textMuted: "#c3a99f",
+    textOnPrimary: "#231a15",
+    switchTrackActive: "#dbaea6",
   },
   typography: {
-    // Inherit the app's body font (Inter) loaded via next/font on <html>.
     fontFamily: "var(--font-inter), system-ui, -apple-system, sans-serif",
   },
   radius: { md: "0.625rem", lg: "0.75rem" },
