@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Bistro",
+    "description": "Un bistrò tedesco — accogliente, di stagione, cucinato con amore."
+  },
+  "nav": {
+    "brand": "Bistro",
+    "home": "Home",
+    "about": "Chi siamo",
+    "menu": "Il nostro menu",
+    "findUs": "Come trovarci",
+    "contact": "Contattaci",
+    "reviews": "Lascia una recensione",
+    "login": "Accedi",
+    "openMenu": "Apri il menu",
+    "closeMenu": "Chiudi il menu"
+  },
+  "home": {
+    "eyebrow": "Benvenuti",
+    "title": "Benvenuti nel nostro bistrò",
+    "subtitle": "Cucina di stagione, un'atmosfera accogliente e un luogo dove fermarsi. Scoprite la nostra casa.",
+    "ctaMenu": "Vedi il menu",
+    "ctaContact": "Contattaci",
+    "sectionsTitle": "Scoprite la nostra casa"
+  },
+  "sections": {
+    "about": {
+      "title": "Chi siamo",
+      "intro": "Conoscete il nostro bistrò, il nostro team e la nostra storia. Contenuto in arrivo."
+    },
+    "menu": {
+      "title": "Il nostro menu",
+      "intro": "Il nostro menu di stagione con antipasti, primi e dolci. Contenuto in arrivo."
+    },
+    "findUs": {
+      "title": "Come trovarci",
+      "intro": "Indirizzo, orari di apertura e come raggiungerci. Contenuto in arrivo."
+    },
+    "contact": {
+      "title": "Contattaci",
+      "intro": "Inviateci un messaggio o chiamateci. Contenuto in arrivo."
+    },
+    "reviews": {
+      "title": "Lascia una recensione",
+      "intro": "Condividete con noi la vostra esperienza. Contenuto in arrivo."
+    }
+  },
+  "login": {
+    "title": "Accedi",
+    "subtitle": "Accedi per entrare nella tua area.",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Accedi",
+    "signingIn": "Accesso in corso …",
+    "error": "L'email o la password non sono corretti."
+  },
+  "admin": {
+    "title": "Amministrazione",
+    "welcome": "Bentornato",
+    "contentEditing": "Qui gli amministratori modificano i contenuti del sito.",
+    "signedInAs": "Connesso come",
+    "role": "Ruolo",
+    "signOut": "Esci"
+  },
+  "footer": {
+    "tagline": "Un bistrò tedesco — accogliente, di stagione, cucinato con amore.",
+    "sectionsHeading": "Scopri",
+    "legalHeading": "Note legali",
+    "impressum": "Note legali",
+    "datenschutz": "Privacy",
+    "rights": "Tutti i diritti riservati."
+  },
+  "legal": {
+    "impressumTitle": "Note legali (Impressum)",
+    "datenschutzTitle": "Informativa sulla privacy",
+    "placeholder": "Il testo legale è fornito dal gestore e inserito qui."
+  },
+  "cookie": {
+    "message": "Usiamo i cookie per migliorare la tua esperienza. Decidi tu cosa caricare.",
+    "accept": "Accetta tutti",
+    "reject": "Solo necessari",
+    "settings": "Impostazioni"
+  },
+  "common": {
+    "comingSoon": "Contenuto in arrivo",
+    "backHome": "Torna alla home"
+  }
+}

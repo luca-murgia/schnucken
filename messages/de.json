@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Bistro",
+    "description": "Ein deutsches Bistro — herzlich, saisonal, mit Liebe gekocht."
+  },
+  "nav": {
+    "brand": "Bistro",
+    "home": "Startseite",
+    "about": "Über uns",
+    "menu": "Speisekarte",
+    "findUs": "So finden Sie uns",
+    "contact": "Kontakt",
+    "reviews": "Bewertung abgeben",
+    "login": "Anmelden",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "home": {
+    "eyebrow": "Willkommen",
+    "title": "Herzlich willkommen in unserem Bistro",
+    "subtitle": "Saisonale Küche, gemütliche Atmosphäre und ein Ort zum Verweilen. Entdecken Sie unser Haus.",
+    "ctaMenu": "Speisekarte ansehen",
+    "ctaContact": "Kontakt aufnehmen",
+    "sectionsTitle": "Entdecken Sie unser Haus"
+  },
+  "sections": {
+    "about": {
+      "title": "Über uns",
+      "intro": "Lernen Sie unser Bistro, unser Team und unsere Geschichte kennen. Inhalt folgt in Kürze."
+    },
+    "menu": {
+      "title": "Speisekarte",
+      "intro": "Unsere saisonale Karte mit Vorspeisen, Hauptgerichten und Desserts. Inhalt folgt in Kürze."
+    },
+    "findUs": {
+      "title": "So finden Sie uns",
+      "intro": "Adresse, Öffnungszeiten und Anfahrt. Inhalt folgt in Kürze."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "intro": "Schreiben Sie uns eine Nachricht oder rufen Sie uns an. Inhalt folgt in Kürze."
+    },
+    "reviews": {
+      "title": "Bewertung abgeben",
+      "intro": "Teilen Sie Ihre Erfahrung mit uns. Inhalt folgt in Kürze."
+    }
+  },
+  "login": {
+    "title": "Anmelden",
+    "subtitle": "Melden Sie sich an, um auf Ihren Bereich zuzugreifen.",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "submit": "Anmelden",
+    "signingIn": "Anmeldung läuft …",
+    "error": "E-Mail oder Passwort ist nicht korrekt."
+  },
+  "admin": {
+    "title": "Verwaltung",
+    "welcome": "Willkommen zurück",
+    "contentEditing": "Hier bearbeiten Administratoren die Inhalte der Website.",
+    "signedInAs": "Angemeldet als",
+    "role": "Rolle",
+    "signOut": "Abmelden"
+  },
+  "footer": {
+    "tagline": "Ein deutsches Bistro — herzlich, saisonal, mit Liebe gekocht.",
+    "sectionsHeading": "Entdecken",
+    "legalHeading": "Rechtliches",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "legal": {
+    "impressumTitle": "Impressum",
+    "datenschutzTitle": "Datenschutzerklärung",
+    "placeholder": "Der rechtliche Text wird vom Betreiber bereitgestellt und hier eingefügt."
+  },
+  "cookie": {
+    "message": "Wir verwenden Cookies, um Ihr Erlebnis zu verbessern. Sie entscheiden, was geladen wird.",
+    "accept": "Alle akzeptieren",
+    "reject": "Nur notwendige",
+    "settings": "Einstellungen"
+  },
+  "common": {
+    "comingSoon": "Inhalt folgt",
+    "backHome": "Zurück zur Startseite"
+  }
+}

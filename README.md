@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Schnucken — German Bistro website
 
-## Getting Started
+A multilingual (DE / EN / IT) website for a German bistro, built as a client demo.
+Next.js 16 (App Router) · Tailwind v4 · shadcn/ui · Zustand · next-intl · Prisma + Neon · Auth.js.
 
-First, run the development server:
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# open http://localhost:3000  (redirects to /de)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app runs locally with placeholder env values. To wire up the database and
+logins (and to deploy), see **[DEPLOY.md](./DEPLOY.md)**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Dev server (Turbopack) |
+| `npm run build` / `npm start` | Production build / serve |
+| `npm run db:migrate` | Create/update the database schema (needs a real Neon URL) |
+| `npm run db:seed` | Create the admin user |
+| `npm run db:studio` | Browse the database (Prisma Studio) |
 
-## Learn More
+## What's here (Phase 0)
 
-To learn more about Next.js, take a look at the following resources:
+- Responsive shell: desktop header nav + mobile burger menu, language switcher, footer, cookie banner.
+- Routed pages per section — Get to Know Us, Our Menu, How to Find Us, Contact Us, Leave a Review — plus Impressum & Datenschutz (placeholder content).
+- Auth infrastructure: credentials login, `admin` / `client` roles, a protected `/admin` area.
+- Warm green-and-brown "Waldküche" theme with Fraunces + Inter typography.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Architecture, conventions, and the theme system are documented in **[CLAUDE.md](./CLAUDE.md)**.

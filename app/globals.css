@@ -1,26 +1,173 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Typography: Inter for body/UI, Fraunces for headings. */
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-fraunces);
+  --font-mono: var(--font-mono-stack);
+
+  /* Brand tokens -> utilities: bg-forest, text-cream, border-walnut, etc. */
+  --color-forest: var(--forest);
+  --color-forest-foreground: var(--forest-foreground);
+  --color-walnut: var(--walnut);
+  --color-walnut-foreground: var(--walnut-foreground);
+  --color-amber: var(--amber);
+  --color-amber-foreground: var(--amber-foreground);
+  --color-terracotta: var(--terracotta);
+  --color-sage: var(--sage);
+  --color-cream: var(--cream);
+  --color-oat: var(--oat);
+  --color-ink: var(--ink);
+  --color-taupe: var(--taupe);
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --radius: 0.625rem;
+  --font-mono-stack: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+
+  /* --- Waldküche brand palette (literal, WCAG AA+ verified) --- */
+  --forest: #34503a;
+  --forest-foreground: #faf6ee;
+  --walnut: #6b4a34;
+  --walnut-foreground: #faf6ee;
+  --amber: #c9962e;
+  --amber-foreground: #2a2118;
+  --terracotta: #b4552d;
+  --sage: #7c8b5a;
+  --cream: #faf6ee;
+  --oat: #efe7d8;
+  --ink: #2a2118;
+  --taupe: #8a7e6d;
+
+  /* --- Semantic tokens (light) --- */
+  --background: #faf6ee;
+  --foreground: #2a2118;
+  --card: #fffdf7;
+  --card-foreground: #2a2118;
+  --popover: #fffdf7;
+  --popover-foreground: #2a2118;
+  --primary: #34503a;
+  --primary-foreground: #faf6ee;
+  --secondary: #efe7d8;
+  --secondary-foreground: #2a2118;
+  --muted: #efe7d8;
+  --muted-foreground: #6e6151;
+  --accent: #eae0ce;
+  --accent-foreground: #2a2118;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #e4dac8;
+  --input: #e4dac8;
+  --ring: #34503a;
+  --chart-1: #34503a;
+  --chart-2: #6b4a34;
+  --chart-3: #c9962e;
+  --chart-4: #7c8b5a;
+  --chart-5: #b4552d;
+
+  /* Admin sidebar = deep forest band */
+  --sidebar: #2e4735;
+  --sidebar-foreground: #f1ead9;
+  --sidebar-primary: #c9962e;
+  --sidebar-primary-foreground: #22301f;
+  --sidebar-accent: #3a5a42;
+  --sidebar-accent-foreground: #f5efe3;
+  --sidebar-border: #3a5a42;
+  --sidebar-ring: #c9962e;
+}
+
+.dark {
+  /* --- Nachtwald: dark hero band + admin dark mode --- */
+  --background: #14160f;
+  --foreground: #f5efe3;
+  --card: #1e2618;
+  --card-foreground: #f5efe3;
+  --popover: #1e2618;
+  --popover-foreground: #f5efe3;
+  --primary: #7fb07a;
+  --primary-foreground: #12160e;
+  --secondary: #3e2c21;
+  --secondary-foreground: #f5efe3;
+  --muted: #26301f;
+  --muted-foreground: #b8b2a4;
+  --accent: #33422a;
+  --accent-foreground: #f5efe3;
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: #c6a15b;
+  --chart-1: #7fb07a;
+  --chart-2: #c6a15b;
+  --chart-3: #d98e5a;
+  --chart-4: #6e9c6b;
+  --chart-5: #b4552d;
+
+  --sidebar: #12160e;
+  --sidebar-foreground: #f1ead9;
+  --sidebar-primary: #c6a15b;
+  --sidebar-primary-foreground: #12160e;
+  --sidebar-accent: #26301f;
+  --sidebar-accent-foreground: #f5efe3;
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: #c6a15b;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-heading;
+  }
 }

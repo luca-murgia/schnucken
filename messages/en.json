@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Bistro",
+    "description": "A German bistro — warm, seasonal, cooked with love."
+  },
+  "nav": {
+    "brand": "Bistro",
+    "home": "Home",
+    "about": "Get to Know Us",
+    "menu": "Our Menu",
+    "findUs": "How to Find Us",
+    "contact": "Contact Us",
+    "reviews": "Leave a Review",
+    "login": "Log in",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "home": {
+    "eyebrow": "Welcome",
+    "title": "Welcome to our bistro",
+    "subtitle": "Seasonal cooking, a cosy atmosphere, and a place to linger. Discover our house.",
+    "ctaMenu": "View the menu",
+    "ctaContact": "Get in touch",
+    "sectionsTitle": "Discover our house"
+  },
+  "sections": {
+    "about": {
+      "title": "Get to Know Us",
+      "intro": "Meet our bistro, our team, and our story. Content coming soon."
+    },
+    "menu": {
+      "title": "Our Menu",
+      "intro": "Our seasonal menu of starters, mains, and desserts. Content coming soon."
+    },
+    "findUs": {
+      "title": "How to Find Us",
+      "intro": "Address, opening hours, and directions. Content coming soon."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "intro": "Send us a message or give us a call. Content coming soon."
+    },
+    "reviews": {
+      "title": "Leave a Review",
+      "intro": "Share your experience with us. Content coming soon."
+    }
+  },
+  "login": {
+    "title": "Log in",
+    "subtitle": "Sign in to access your area.",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Log in",
+    "signingIn": "Signing in …",
+    "error": "The email or password is incorrect."
+  },
+  "admin": {
+    "title": "Administration",
+    "welcome": "Welcome back",
+    "contentEditing": "This is where administrators edit the website's content.",
+    "signedInAs": "Signed in as",
+    "role": "Role",
+    "signOut": "Sign out"
+  },
+  "footer": {
+    "tagline": "A German bistro — warm, seasonal, cooked with love.",
+    "sectionsHeading": "Discover",
+    "legalHeading": "Legal",
+    "impressum": "Imprint",
+    "datenschutz": "Privacy",
+    "rights": "All rights reserved."
+  },
+  "legal": {
+    "impressumTitle": "Imprint",
+    "datenschutzTitle": "Privacy Policy",
+    "placeholder": "The legal text is provided by the operator and inserted here."
+  },
+  "cookie": {
+    "message": "We use cookies to improve your experience. You decide what gets loaded.",
+    "accept": "Accept all",
+    "reject": "Necessary only",
+    "settings": "Settings"
+  },
+  "common": {
+    "comingSoon": "Content coming soon",
+    "backHome": "Back to home"
+  }
+}
