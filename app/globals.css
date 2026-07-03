@@ -71,7 +71,7 @@
   --font-mono-stack: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
 
   /* --- Schnucken Rosé brand palette (from the hero illustration) --- */
-  --rose: #e3bcb4; /* dusty rose = the illustration's ground (blends seamlessly) */
+  --rose: #e1bab3; /* dusty rose = the illustration's rendered ground (sampled) */
   --rose-foreground: #3e2e26; /* espresso ink on rose */
   --rose-deep: #c48f86;
   --blush: #f0ded8;
