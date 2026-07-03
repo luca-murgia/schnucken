@@ -11,7 +11,7 @@ export async function SiteFooter() {
 
   return (
     <footer className="border-t border-border bg-espresso text-cream">
-      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-3 md:px-6">
+      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:grid-cols-2 md:px-6 lg:grid-cols-4">
         <div>
           <div className="font-heading text-lg font-semibold">
             {tNav("brand")}
@@ -39,6 +39,8 @@ export async function SiteFooter() {
           </ul>
         </div>
 
+        <PaymentMethods />
+
         <div>
           <div className="text-xs font-semibold tracking-wider text-cream/60 uppercase">
             {tFoot("legalHeading")}
@@ -61,12 +63,6 @@ export async function SiteFooter() {
               </Link>
             </li>
           </ul>
-        </div>
-      </div>
-
-      <div className="border-t border-cream/15">
-        <div className="mx-auto max-w-6xl px-4 py-6 md:px-6">
-          <PaymentMethods />
         </div>
       </div>
 
