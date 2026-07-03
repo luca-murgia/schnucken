@@ -70,6 +70,24 @@ model VerificationToken {
   @@map("verification_tokens")
 }
 
+// Event cards shown on /[locale]/events, managed from /admin/events.
+// One row per event (single-language — the owner writes each card in one
+// language). `image` holds a public path (e.g. /events/x.jpg) or an uploaded
+// data URL. Read via lib/events.ts, written via lib/event-actions.ts.
+model Event {
+  id          String   @id @default(cuid())
+  title       String
+  subtitle    String?
+  description String // multi-line; blank lines separate paragraphs
+  image       String? // public path or data: URL (uploaded, downscaled)
+  published   Boolean  @default(true)
+  sortOrder   Int      @default(0) // lower shows first
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("events")
+}
+
 // Admin-editable site content: one row per (content key, locale).
 // e.g. key "about.body" with locales de/en/it. Read via lib/content.ts.
 model ContentBlock {

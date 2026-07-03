@@ -15,4 +15,9 @@ export const contact = {
     handle: "@das_schnucken",
     url: "https://www.instagram.com/das_schnucken/",
   },
+  // Opens the bistro's Google Maps listing, where guests can tap "Write a
+  // review". Swap for a direct `https://search.google.com/local/writereview?placeid=…`
+  // link once the Google Business Profile Place ID is known.
+  googleReviewUrl:
+    "https://www.google.com/maps/search/?api=1&query=Das+Schnucken+Elfbuchenstra%C3%9Fe+18+34119+Kassel",
 } as const;

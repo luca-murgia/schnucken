@@ -35,11 +35,20 @@ export function LocationMap() {
           <button
             type="button"
             onClick={() => setLoaded(true)}
-            className="flex h-full w-full flex-col items-center justify-center gap-2 px-6 text-center transition-colors hover:bg-oat/60"
+            className="relative flex h-full w-full flex-col items-center justify-center gap-2 px-6 text-center transition-colors hover:bg-oat/60"
           >
-            <MapPin className="size-7 text-espresso" />
-            <span className="font-medium text-ink">{t("showMap")}</span>
-            <span className="max-w-xs text-xs text-muted-foreground">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/world-map.webp"
+              alt=""
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 size-full object-cover opacity-30"
+            />
+            <MapPin className="relative size-7 text-espresso" />
+            <span className="relative font-medium text-ink">
+              {t("showMap")}
+            </span>
+            <span className="relative max-w-xs text-xs text-muted-foreground">
               {t("mapConsent")}
             </span>
           </button>

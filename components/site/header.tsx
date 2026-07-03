@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/navigation";
@@ -14,8 +15,16 @@ export async function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 md:px-6">
         <Link
           href="/"
-          className="font-heading text-xl font-semibold tracking-tight text-espresso"
+          className="flex items-center gap-2.5 font-heading text-xl font-semibold tracking-tight text-espresso"
         >
+          <Image
+            src="/schnucken-logo.png"
+            alt=""
+            width={36}
+            height={36}
+            priority
+            className="size-9 rounded-full"
+          />
           {t("brand")}
         </Link>
 

@@ -4,6 +4,7 @@
 export type SectionKey =
   | "whereAndWhen"
   | "menu"
+  | "events"
   | "reserveTable"
   | "contact"
   | "reviews";
@@ -11,6 +12,7 @@ export type SectionKey =
 export const sections: { key: SectionKey; href: string }[] = [
   { key: "whereAndWhen", href: "/where-and-when" },
   { key: "menu", href: "/menu" },
+  { key: "events", href: "/events" },
   { key: "reserveTable", href: "/reserve" },
   { key: "contact", href: "/contact" },
   { key: "reviews", href: "/reviews" },

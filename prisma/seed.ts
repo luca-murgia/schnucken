@@ -15,6 +15,25 @@ async function main() {
   });
 
   console.log(`✔ Seeded admin user: ${admin.email}`);
+
+  // Example event so the Events page and admin manager have real content to
+  // show/edit out of the box. Fixed id → idempotent across re-seeds.
+  const event = await prisma.event.upsert({
+    where: { id: "seed-sunday-service" },
+    update: {},
+    create: {
+      id: "seed-sunday-service",
+      title: "Burger Sunday",
+      subtitle: "Jeden Sonntag · 15:00–21:00 Uhr · solange der Vorrat reicht",
+      description:
+        "Oklahoma Smash Burger + Fries\nBeyond Burger (vegetarisch) + Fries\n+++\n\nKuchen des Tages\n\nReservieren oder einfach vorbeikommen.\n\nBeim Sunday Service gibt es nur Burger und Specials – nicht unser reguläres Menü.",
+      image: "/events/sunday-service.jpg",
+      published: true,
+      sortOrder: 0,
+    },
+  });
+
+  console.log(`✔ Seeded example event: ${event.title}`);
 }
 
 main()
