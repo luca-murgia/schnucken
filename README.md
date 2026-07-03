@@ -42,4 +42,9 @@ logins (and to deploy), see **[DEPLOY.md](./DEPLOY.md)**.
 - Auth infrastructure: credentials login, `admin` / `client` roles, a protected `/admin` area.
 - Warm green-and-brown "Waldküche" theme with Fraunces + Inter typography.
 
+## What's new (Phase 1)
+
+- **Real GDPR cookie consent** via c15t (offline mode — no backend/account), themed to match, with a settings dialog and granular categories.
+- **Admin content editor** (mini-CMS start): `/admin/content` edits the "Get to Know Us" text in all three languages; the public page reads it (with catalog fallback) and refreshes on save. Live editing needs a wired Neon DB.
+
 Architecture, conventions, and the theme system are documented in **[CLAUDE.md](./CLAUDE.md)**.

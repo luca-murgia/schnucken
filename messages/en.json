@@ -61,7 +61,17 @@
     "contentEditing": "This is where administrators edit the website's content.",
     "signedInAs": "Signed in as",
     "role": "Role",
-    "signOut": "Sign out"
+    "signOut": "Sign out",
+    "manageContent": "Manage content",
+    "content": {
+      "title": "Website content",
+      "subtitle": "Edit the copy in all three languages. Changes appear on the site immediately.",
+      "aboutHeading": "\"Get to Know Us\" intro text",
+      "save": "Save",
+      "saving": "Saving …",
+      "saved": "Saved",
+      "error": "Saving failed"
+    }
   },
   "footer": {
     "tagline": "A German bistro — warm, seasonal, cooked with love.",

@@ -29,9 +29,16 @@ Tailwind v4 · shadcn/ui (`radix`/`vega` preset, components in `components/ui/`)
 - `app/[locale]/layout.tsx` — the **root layout** (renders `<html>`); loads Fraunces + Inter, wraps `NextIntlClientProvider`, renders Header/Footer/CookieBanner. There is intentionally **no** `app/layout.tsx`.
 - Public sections: `about`, `menu`, `find-us`, `contact`, `reviews` — placeholder pages via `components/site/page-placeholder.tsx`. The section list lives in `lib/nav.ts`.
 - `app/[locale]/login` — credentials login (client `LoginForm` → server action `lib/actions.ts` → `signIn`).
-- `app/[locale]/admin` — protected (proxy + defense-in-depth `auth()` in the layout). The admin's defining job is **editing site content** (mini-CMS — to be built).
+- `app/[locale]/admin` — protected (proxy + defense-in-depth `auth()` in the layout); `/admin/content` is the mini-CMS editor.
 - `app/[locale]/impressum` + `datenschutz` — legal placeholders (client provides the text).
 - `app/api/auth/[...nextauth]/route.ts` — Auth.js handlers.
+
+## Content (mini-CMS)
+
+- Editable content lives in the `ContentBlock` table, keyed by `(key, locale)` (e.g. `about.body`).
+- Read with `getContent(key, locale, fallback)` / `getContentByLocales(key)` in `lib/content.ts` — both fall back gracefully (message catalog / empty) when the DB is unreachable, so builds stay green before Neon is wired.
+- Save via the `saveContent` server action (`lib/admin-actions.ts`): admin-only, upserts every locale, and `revalidatePath`s the affected public pages so edits appear without a redeploy.
+- `/[locale]/about` renders `about.body` (fallback → `sections.about.intro`). Live editing needs a wired Neon DB + a seeded admin.
 
 ## i18n
 

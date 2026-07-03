@@ -61,7 +61,17 @@
     "contentEditing": "Hier bearbeiten Administratoren die Inhalte der Website.",
     "signedInAs": "Angemeldet als",
     "role": "Rolle",
-    "signOut": "Abmelden"
+    "signOut": "Abmelden",
+    "manageContent": "Inhalte verwalten",
+    "content": {
+      "title": "Website-Inhalte",
+      "subtitle": "Bearbeiten Sie die Texte in allen drei Sprachen. Änderungen erscheinen sofort auf der Website.",
+      "aboutHeading": "„Über uns“ – Einleitungstext",
+      "save": "Speichern",
+      "saving": "Speichern …",
+      "saved": "Gespeichert",
+      "error": "Speichern fehlgeschlagen"
+    }
   },
   "footer": {
     "tagline": "Ein deutsches Bistro — herzlich, saisonal, mit Liebe gekocht.",

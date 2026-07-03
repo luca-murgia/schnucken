@@ -31,6 +31,15 @@ test("section routes render (menu)", async ({ page }) => {
   );
 });
 
+test("about page renders editable content (catalog fallback when no DB)", async ({
+  page,
+}) => {
+  await page.goto("/de/about");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText(
+    "Über uns",
+  );
+});
+
 test("language switcher changes locale and preserves the page", async ({
   page,
 }) => {

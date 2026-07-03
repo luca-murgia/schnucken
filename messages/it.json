@@ -61,7 +61,17 @@
     "contentEditing": "Qui gli amministratori modificano i contenuti del sito.",
     "signedInAs": "Connesso come",
     "role": "Ruolo",
-    "signOut": "Esci"
+    "signOut": "Esci",
+    "manageContent": "Gestisci contenuti",
+    "content": {
+      "title": "Contenuti del sito",
+      "subtitle": "Modifica i testi in tutte e tre le lingue. Le modifiche appaiono subito sul sito.",
+      "aboutHeading": "Testo introduttivo \"Chi siamo\"",
+      "save": "Salva",
+      "saving": "Salvataggio …",
+      "saved": "Salvato",
+      "error": "Salvataggio non riuscito"
+    }
   },
   "footer": {
     "tagline": "Un bistrò tedesco — accogliente, di stagione, cucinato con amore.",

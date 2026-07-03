@@ -1,5 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
+import { Link } from "@/i18n/navigation";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -17,8 +19,11 @@ export default async function AdminPage() {
         <CardHeader>
           <CardTitle className="text-forest">{t("title")}</CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="space-y-4">
           <p className="text-muted-foreground">{t("contentEditing")}</p>
+          <Button asChild>
+            <Link href="/admin/content">{t("manageContent")}</Link>
+          </Button>
         </CardContent>
       </Card>
     </div>

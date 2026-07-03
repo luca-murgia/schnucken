@@ -69,3 +69,16 @@ model VerificationToken {
   @@unique([identifier, token])
   @@map("verification_tokens")
 }
+
+// Admin-editable site content: one row per (content key, locale).
+// e.g. key "about.body" with locales de/en/it. Read via lib/content.ts.
+model ContentBlock {
+  id        String   @id @default(cuid())
+  key       String
+  locale    String
+  value     String
+  updatedAt DateTime @updatedAt
+
+  @@unique([key, locale])
+  @@map("content_blocks")
+}
