@@ -212,6 +212,13 @@
     "reject": "Solo necessari",
     "settings": "Impostazioni"
   },
+  "payment": {
+    "heading": "Metodi di pagamento",
+    "cash": "Contanti",
+    "contactless": "Contactless",
+    "debit": "Carta di debito",
+    "ecCard": "Carta EC"
+  },
   "common": {
     "comingSoon": "Contenuto in arrivo",
     "backHome": "Torna alla home"

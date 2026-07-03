@@ -212,6 +212,13 @@
     "reject": "Necessary only",
     "settings": "Settings"
   },
+  "payment": {
+    "heading": "Payment options",
+    "cash": "Cash",
+    "contactless": "Contactless",
+    "debit": "Debit card",
+    "ecCard": "EC card"
+  },
   "common": {
     "comingSoon": "Content coming soon",
     "backHome": "Back to home"

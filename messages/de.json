@@ -212,6 +212,13 @@
     "reject": "Nur notwendige",
     "settings": "Einstellungen"
   },
+  "payment": {
+    "heading": "Zahlungsarten",
+    "cash": "Barzahlung",
+    "contactless": "Kontaktlos",
+    "debit": "Debitkarte",
+    "ecCard": "EC-Karte"
+  },
   "common": {
     "comingSoon": "Inhalt folgt",
     "backHome": "Zurück zur Startseite"

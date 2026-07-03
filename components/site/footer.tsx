@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/navigation";
 import { sections } from "@/lib/nav";
+import { PaymentMethods } from "@/components/site/payment-methods";
 
 export async function SiteFooter() {
   const tNav = await getTranslations("nav");
@@ -60,6 +61,12 @@ export async function SiteFooter() {
               </Link>
             </li>
           </ul>
+        </div>
+      </div>
+
+      <div className="border-t border-cream/15">
+        <div className="mx-auto max-w-6xl px-4 py-6 md:px-6">
+          <PaymentMethods />
         </div>
       </div>
 
