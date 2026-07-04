@@ -7,7 +7,7 @@
     "brand": "Das Schnucken",
     "home": "Home",
     "about": "Chi siamo",
-    "whereAndWhen": "Dove e quando",
+    "whereAndWhen": "Come trovarci",
     "menu": "Il nostro menu",
     "events": "Eventi",
     "reserveTable": "Prenota",
@@ -76,7 +76,7 @@
   },
   "sections": {
     "whereAndWhen": {
-      "title": "Dove e quando",
+      "title": "Come trovarci",
       "intro": "Orari e come raggiungerci — ci trovate qui."
     },
     "about": {

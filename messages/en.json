@@ -7,7 +7,7 @@
     "brand": "Das Schnucken",
     "home": "Home",
     "about": "Get to Know Us",
-    "whereAndWhen": "Where & When",
+    "whereAndWhen": "Find us",
     "menu": "Our Menu",
     "events": "Events",
     "reserveTable": "Make a reservation",
@@ -76,7 +76,7 @@
   },
   "sections": {
     "whereAndWhen": {
-      "title": "Where & When",
+      "title": "Find us",
       "intro": "Opening times and directions — find us here."
     },
     "about": {
