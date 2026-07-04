@@ -24,7 +24,10 @@ export default async function WhereAndWhenPage({
 
   return (
     <div className="mx-auto max-w-4xl px-5 py-16 md:px-6 md:py-24">
-      <h1 className="text-4xl font-semibold text-ink md:text-5xl">
+      <span className="text-xs font-semibold tracking-[0.18em] text-clay uppercase">
+        {t("openingHours.eyebrow")}
+      </span>
+      <h1 className="mt-3 text-4xl font-semibold text-ink md:text-5xl">
         {t("nav.whereAndWhen")}
       </h1>
 

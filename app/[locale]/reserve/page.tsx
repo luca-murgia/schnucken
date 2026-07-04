@@ -24,7 +24,7 @@ export default async function ReservePage({
   return (
     <section className="mx-auto max-w-3xl px-5 py-16 md:px-6 md:py-24">
       <span className="text-xs font-semibold tracking-[0.18em] text-clay uppercase">
-        {t("nav.reserveTable")}
+        {t("reservation.eyebrow")}
       </span>
       <h1 className="mt-3 text-4xl font-semibold text-ink md:text-5xl">
         {t("sections.reserveTable.title")}

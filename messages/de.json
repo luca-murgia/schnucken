@@ -20,7 +20,7 @@
     "language": "Sprache"
   },
   "home": {
-    "eyebrow": "Willkommen",
+    "eyebrow": "Bistro · Kassel",
     "title": "Herzlich willkommen bei Das Schnucken",
     "subtitle": "Saisonale Küche, gemütliche Atmosphäre und ein Ort zum Verweilen. Entdecken Sie unser Haus.",
     "ctaMenu": "Speisekarte ansehen",
@@ -29,7 +29,7 @@
     "aboutHeading": "Schön, dass ihr da seid"
   },
   "openingHours": {
-    "eyebrow": "Besuch uns",
+    "eyebrow": "Besuch planen",
     "title": "Öffnungszeiten",
     "closed": "Geschlossen",
     "kitchen": "Küche",
@@ -70,7 +70,8 @@
     "closedNote": "Montag & Dienstag geschlossen.",
     "thankYouTitle": "Vielen Dank!",
     "thankYouBody": "Wir haben Ihre Reservierungsanfrage erhalten und melden uns in Kürze zur Bestätigung.",
-    "newReservation": "Neue Reservierung"
+    "newReservation": "Neue Reservierung",
+    "eyebrow": "Platz sichern"
   },
   "sections": {
     "whereAndWhen": {
@@ -108,7 +109,7 @@
     }
   },
   "events": {
-    "eyebrow": "Veranstaltungen",
+    "eyebrow": "Was ansteht",
     "empty": "Zurzeit sind keine Veranstaltungen geplant. Schauen Sie bald wieder vorbei.",
     "example": {
       "title": "Burger Sunday",
@@ -224,7 +225,7 @@
     "backHome": "Zurück zur Startseite"
   },
   "contact": {
-    "eyebrow": "Kontakt",
+    "eyebrow": "Wir sind da",
     "getInTouch": "Kontakt aufnehmen",
     "intro": "Wir freuen uns, von Ihnen zu hören. Reservieren Sie einen Tisch, fragen Sie nach der Karte oder sagen Sie einfach Hallo.",
     "addressLabel": "So finden Sie uns",
@@ -236,7 +237,7 @@
     "country": "Deutschland"
   },
   "reviews": {
-    "eyebrow": "Bewertungen",
+    "eyebrow": "Nette Worte",
     "body": "Haben Sie mit uns einen Abend voller Schnucken genossen? Ihre Worte helfen anderen Gästen, den Weg an unseren Tisch zu finden – und sie bedeuten unserem kleinen Team unglaublich viel. Teilen Sie ein paar Zeilen über Ihren Besuch auf Google Maps.",
     "cta": "Auf Google bewerten"
   }
