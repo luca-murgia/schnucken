@@ -49,7 +49,7 @@ export default async function ContactPage({
     "text-xs font-semibold tracking-wider text-clay uppercase";
 
   return (
-    <section className="mx-auto max-w-5xl px-5 py-16 md:px-6 md:py-24">
+    <section className="mx-auto max-w-4xl px-5 py-16 md:px-6 md:py-24">
       <span className="text-xs font-semibold tracking-[0.18em] text-clay uppercase">
         {t("contact.eyebrow")}
       </span>

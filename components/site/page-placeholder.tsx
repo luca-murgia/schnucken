@@ -11,7 +11,7 @@ type Props = {
 /** Themed placeholder used by each section page until real content is added. */
 export function PagePlaceholder({ title, intro, comingSoon, back }: Props) {
   return (
-    <section className="mx-auto max-w-4xl px-4 py-20 md:px-6 md:py-28">
+    <section className="mx-auto max-w-4xl px-5 py-16 md:px-6 md:py-24">
       <span className="text-xs font-semibold tracking-[0.18em] text-clay uppercase">
         {comingSoon}
       </span>

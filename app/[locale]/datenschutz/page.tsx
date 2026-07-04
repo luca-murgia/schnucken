@@ -41,7 +41,7 @@ export default async function DatenschutzPage({
   const t = await getTranslations("legal");
 
   return (
-    <section className="mx-auto max-w-3xl px-5 py-16 md:px-6 md:py-24">
+    <section className="mx-auto max-w-4xl px-5 py-16 md:px-6 md:py-24">
       <h1 className="text-4xl font-semibold text-ink md:text-5xl">
         {t("datenschutzTitle")}
       </h1>

@@ -7,10 +7,10 @@
     "brand": "Das Schnucken",
     "home": "Home",
     "about": "Get to Know Us",
-    "whereAndWhen": "Find us",
+    "whereAndWhen": "Find Us",
     "menu": "Our Menu",
     "events": "Events",
-    "reserveTable": "Make a reservation",
+    "reserveTable": "Make a Reservation",
     "findUs": "How to Find Us",
     "contact": "About Us",
     "reviews": "Leave a Review",
@@ -24,7 +24,7 @@
     "title": "Welcome to Das Schnucken",
     "subtitle": "Seasonal cooking, a cosy atmosphere, and a place to linger. Discover our house.",
     "ctaMenu": "View the menu",
-    "ctaReserve": "Make a reservation",
+    "ctaReserve": "Make a Reservation",
     "sectionsTitle": "Discover our house",
     "sectionsEyebrow": "Take a look"
   },
@@ -76,13 +76,13 @@
   },
   "sections": {
     "whereAndWhen": {
-      "title": "Find us",
-      "intro": "Opening times and directions — find us here."
+      "title": "Find Us",
+      "intro": "Opening times and directions. Find us here."
     },
     "about": {
       "title": "Get to Know Us",
       "intro": "Meet our bistro, our team, and our story.",
-      "body": "A long time ago, an idea took shape: a place of our own for coming together, sharing, and growing. We have grown, weathered an intense beginning, and now we want to share this place with you.\nWe — David, Till, and our wonderful team — came together to give something back to the Vorderer Westen: to offer this beautiful part of Kassel a culinary alternative, and to schnucken with you.\n“Schnucken” means to nibble and to savour in the North Hessian dialect — and that is exactly what we want to experience with you in our bistro. Fill the tables, share with one another, get talking, and spend a lovely evening with us. For us, a good evening means: exciting, colourful, and full of new impressions. That is exactly what we bring to the plates and into the glasses — moments of pleasure, paired with a relaxed, welcoming atmosphere and lovely people: with you.\nWe want to share our joy of schnucken with you — with exciting natural wines, drinks, and an ever-changing menu.\nCome by and let us come together, share new moments, grow with one another, and savour … let us schnucken together!\nYour Schnucken team"
+      "body": "A long time ago, an idea took shape: a place of our own for coming together, sharing, and growing. We have grown, weathered an intense beginning, and now we want to share this place with you.\nWe, David, Till, and our wonderful team, came together to give something back to the Vorderer Westen: to offer this beautiful part of Kassel a culinary alternative, and to schnucken with you.\n“Schnucken” means to nibble and to savour in the North Hessian dialect, and that is exactly what we want to experience with you in our bistro. Fill the tables, share with one another, get talking, and spend a lovely evening with us. For us, a good evening means: exciting, colourful, and full of new impressions. That is exactly what we bring to the plates and into the glasses. Moments of pleasure, paired with a relaxed, welcoming atmosphere and lovely people: with you.\nWe want to share our joy of schnucken with you: exciting natural wines, drinks, and an ever-changing menu.\nCome by and let us come together, share new moments, grow with one another, and savour … let us schnucken together!\nYour Schnucken team"
     },
     "menu": {
       "title": "Our Menu",
@@ -90,7 +90,7 @@
     },
     "events": {
       "title": "Events",
-      "intro": "Sunday Service, specials, and special evenings — what's coming up at Das Schnucken."
+      "intro": "Sunday Service, specials, and special evenings. See what's coming up at Das Schnucken."
     },
     "reserveTable": {
       "title": "Reserve a Table",
@@ -106,7 +106,7 @@
     },
     "reviews": {
       "title": "Leave a Review",
-      "intro": "Enjoyed your visit? Tell us — and future guests — about it."
+      "intro": "Enjoyed your visit? Tell us, and future guests, about it."
     }
   },
   "events": {
