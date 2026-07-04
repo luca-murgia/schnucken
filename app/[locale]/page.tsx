@@ -34,7 +34,7 @@ export default async function HomePage({
     <>
       {/* Hero — copy on the left, illustration on the right (rose band) */}
       <section className="bg-rose">
-        <div className="mx-auto grid max-w-6xl items-center gap-8 px-5 py-16 md:grid-cols-2 md:gap-10 md:px-6 md:py-24">
+        <div className="mx-auto grid max-w-6xl items-center gap-8 px-5 py-10 md:grid-cols-2 md:gap-10 md:px-6 md:py-14">
           <div className="text-center md:text-left">
             <span className="text-xs font-semibold tracking-[0.22em] text-espresso/70 uppercase">
               {t("home.eyebrow")}
@@ -69,6 +69,14 @@ export default async function HomePage({
               priority
               unoptimized
               className="mx-auto h-auto w-full max-w-md"
+            />
+            <Image
+              src="/schnucken-hero-logo.svg"
+              alt={t("nav.brand")}
+              width={1079}
+              height={648}
+              unoptimized
+              className="mx-auto mt-4 h-auto w-1/4 max-w-[150px]"
             />
           </div>
         </div>
