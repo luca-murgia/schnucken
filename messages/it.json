@@ -10,9 +10,9 @@
     "whereAndWhen": "Dove e quando",
     "menu": "Il nostro menu",
     "events": "Eventi",
-    "reserveTable": "Prenota un tavolo",
+    "reserveTable": "Prenota",
     "findUs": "Come trovarci",
-    "contact": "Contattaci",
+    "contact": "Chi siamo",
     "reviews": "Lascia una recensione",
     "login": "Accedi",
     "openMenu": "Apri il menu",
@@ -24,9 +24,8 @@
     "title": "Benvenuti da Das Schnucken",
     "subtitle": "Cucina di stagione, un'atmosfera accogliente e un luogo dove fermarsi. Scoprite la nostra casa.",
     "ctaMenu": "Vedi il menu",
-    "ctaReserve": "Prenota un tavolo",
+    "ctaReserve": "Prenota",
     "sectionsTitle": "Scoprite la nostra casa",
-    "aboutHeading": "Che bello avervi qui",
     "sectionsEyebrow": "Dai un'occhiata"
   },
   "openingHours": {
@@ -54,8 +53,9 @@
   "reservation": {
     "intro": "Prenota il tuo tavolo — ti aspettiamo.",
     "nameLabel": "Nome",
-    "emailLabel": "Email",
+    "emailLabel": "Email (opzionale)",
     "phoneLabel": "Telefono (opzionale)",
+    "newsletterLabel": "Iscriviti alla newsletter",
     "dateLabel": "Data",
     "datePlaceholder": "Scegli una data",
     "timeLabel": "Orario",
@@ -101,8 +101,8 @@
       "intro": "Indirizzo, orari di apertura e come raggiungerci. Contenuto in arrivo."
     },
     "contact": {
-      "title": "Contattaci",
-      "intro": "Scriveteci, chiamateci o passate semplicemente a trovarci."
+      "title": "Chi siamo",
+      "intro": "La nostra storia, come raggiungerci e la nostra newsletter."
     },
     "reviews": {
       "title": "Lascia una recensione",
@@ -227,6 +227,7 @@
   },
   "contact": {
     "eyebrow": "Siamo qui",
+    "storyHeading": "Che bello avervi qui",
     "getInTouch": "Contattaci",
     "intro": "Ci farebbe piacere sentirvi. Prenotate un tavolo, chiedeteci del menù o semplicemente salutateci.",
     "addressLabel": "Dove siamo",
@@ -236,6 +237,15 @@
     "vatLabel": "Partita IVA",
     "getDirections": "Come arrivare",
     "country": "Germania"
+  },
+  "newsletter": {
+    "heading": "Restiamo in contatto",
+    "description": "Iscrivetevi per ricevere ogni tanto novità su menu, eventi e serate da assaporare.",
+    "emailLabel": "Indirizzo email",
+    "emailPlaceholder": "tu@esempio.it",
+    "submit": "Iscriviti",
+    "success": "Grazie! Sei nella lista.",
+    "invalid": "Inserisci un indirizzo email valido."
   },
   "reviews": {
     "eyebrow": "Belle parole",

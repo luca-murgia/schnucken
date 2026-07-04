@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -116,20 +117,6 @@ export function ReservationForm() {
           <Input id="name" name="name" required autoComplete="name" />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="email">{t("emailLabel")}</Label>
-          <Input
-            id="email"
-            name="email"
-            type="email"
-            required
-            autoComplete="email"
-          />
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="phone">{t("phoneLabel")}</Label>
-          <Input id="phone" name="phone" type="tel" autoComplete="tel" />
-        </div>
-        <div className="space-y-2">
           <Label htmlFor="guests">{t("guestsLabel")}</Label>
           <Select value={guests} onValueChange={setGuests}>
             <SelectTrigger id="guests" className="w-full">
@@ -194,6 +181,24 @@ export function ReservationForm() {
             </SelectContent>
           </Select>
         </div>
+      </div>
+
+      <div className="grid gap-5 sm:grid-cols-2">
+        <div className="space-y-2">
+          <Label htmlFor="email">{t("emailLabel")}</Label>
+          <Input id="email" name="email" type="email" autoComplete="email" />
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="phone">{t("phoneLabel")}</Label>
+          <Input id="phone" name="phone" type="tel" autoComplete="tel" />
+        </div>
+      </div>
+
+      <div className="flex items-center gap-3">
+        <Checkbox id="newsletter" name="newsletter" defaultChecked />
+        <Label htmlFor="newsletter" className="font-normal">
+          {t("newsletterLabel")}
+        </Label>
       </div>
 
       <div className="space-y-2">

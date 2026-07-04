@@ -1,6 +1,8 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { contact } from "@/lib/contact";
+import { getContent } from "@/lib/content";
+import { NewsletterForm } from "@/components/site/newsletter-form";
 import {
   Card,
   CardContent,
@@ -27,6 +29,15 @@ export default async function ContactPage({
   setRequestLocale(locale);
   const t = await getTranslations();
 
+  // "Get to Know Us" story — editable via the admin content editor, falls back
+  // to the message catalog when the DB isn't wired.
+  const aboutBody = await getContent(
+    "about.body",
+    locale,
+    t("sections.about.body"),
+  );
+  const aboutParagraphs = aboutBody.split("\n").filter((p) => p.trim());
+
   const mapsQuery = encodeURIComponent(
     `${contact.street}, ${contact.postalCode} ${contact.city}`,
   );
@@ -45,11 +56,29 @@ export default async function ContactPage({
       <h1 className="mt-3 text-4xl font-semibold text-ink md:text-5xl">
         {t("sections.contact.title")}
       </h1>
-      <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
-        {t("contact.intro")}
-      </p>
 
-      <div className="mt-10 grid gap-5 md:grid-cols-2">
+      {/* Get to Know Us story */}
+      <div className="mt-8 max-w-3xl">
+        <h2 className="text-2xl font-semibold text-ink md:text-3xl">
+          {t("contact.storyHeading")}
+        </h2>
+        <div className="mt-6 space-y-5 text-lg leading-relaxed text-ink/80">
+          {aboutParagraphs.map((para, i) => (
+            <p
+              key={i}
+              className={
+                i === aboutParagraphs.length - 1
+                  ? "font-medium text-ink italic"
+                  : undefined
+              }
+            >
+              {para}
+            </p>
+          ))}
+        </div>
+      </div>
+
+      <div className="mt-12 grid gap-5 md:grid-cols-2">
         {/* Find us */}
         <Card>
           <CardHeader>
@@ -122,6 +151,19 @@ export default async function ContactPage({
           </CardContent>
         </Card>
       </div>
+
+      {/* Newsletter sign-up */}
+      <Card className="mt-5">
+        <CardHeader>
+          <CardTitle className="text-xl text-espresso">
+            {t("newsletter.heading")}
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-5">
+          <p className="max-w-2xl text-ink/80">{t("newsletter.description")}</p>
+          <NewsletterForm />
+        </CardContent>
+      </Card>
     </section>
   );
 }

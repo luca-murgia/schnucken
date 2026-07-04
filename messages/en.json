@@ -10,9 +10,9 @@
     "whereAndWhen": "Where & When",
     "menu": "Our Menu",
     "events": "Events",
-    "reserveTable": "Reserve a Table",
+    "reserveTable": "Make a reservation",
     "findUs": "How to Find Us",
-    "contact": "Contact Us",
+    "contact": "About Us",
     "reviews": "Leave a Review",
     "login": "Log in",
     "openMenu": "Open menu",
@@ -24,9 +24,8 @@
     "title": "Welcome to Das Schnucken",
     "subtitle": "Seasonal cooking, a cosy atmosphere, and a place to linger. Discover our house.",
     "ctaMenu": "View the menu",
-    "ctaReserve": "Book a table",
+    "ctaReserve": "Make a reservation",
     "sectionsTitle": "Discover our house",
-    "aboutHeading": "Lovely to have you here",
     "sectionsEyebrow": "Take a look"
   },
   "openingHours": {
@@ -54,8 +53,9 @@
   "reservation": {
     "intro": "Reserve your table — we look forward to your visit.",
     "nameLabel": "Name",
-    "emailLabel": "Email",
+    "emailLabel": "Email (optional)",
     "phoneLabel": "Phone (optional)",
+    "newsletterLabel": "Subscribe to our newsletter",
     "dateLabel": "Date",
     "datePlaceholder": "Pick a date",
     "timeLabel": "Time",
@@ -101,8 +101,8 @@
       "intro": "Address, opening hours, and directions. Content coming soon."
     },
     "contact": {
-      "title": "Contact Us",
-      "intro": "Send us a message, give us a call, or simply drop by."
+      "title": "About Us",
+      "intro": "Our story, how to reach us, and our newsletter."
     },
     "reviews": {
       "title": "Leave a Review",
@@ -227,6 +227,7 @@
   },
   "contact": {
     "eyebrow": "We're here",
+    "storyHeading": "Lovely to have you here",
     "getInTouch": "Get in touch",
     "intro": "We would love to hear from you. Tell us what you think, or simply say hello.",
     "addressLabel": "Find us",
@@ -236,6 +237,15 @@
     "vatLabel": "VAT number",
     "getDirections": "Get directions",
     "country": "Germany"
+  },
+  "newsletter": {
+    "heading": "Stay in the loop",
+    "description": "Sign up for occasional news about our menu, events, and evenings worth lingering over.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Subscribe",
+    "success": "Thank you! You're on the list.",
+    "invalid": "Please enter a valid email address."
   },
   "reviews": {
     "eyebrow": "Kind words",

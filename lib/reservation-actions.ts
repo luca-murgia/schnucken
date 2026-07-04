@@ -15,16 +15,21 @@ export async function createReservation(
 ): Promise<ReservationState> {
   const name = String(formData.get("name") ?? "").trim();
   const email = String(formData.get("email") ?? "").trim();
+  const phone = String(formData.get("phone") ?? "").trim();
   const date = String(formData.get("date") ?? "").trim();
   const time = String(formData.get("time") ?? "").trim();
   const guests = String(formData.get("guests") ?? "").trim();
+  // Unchecked checkboxes are absent from the form data.
+  const newsletter = formData.get("newsletter") != null;
 
   const validDate = /^\d{4}-\d{2}-\d{2}$/.test(date);
   const day = validDate ? new Date(`${date}T00:00:00`).getDay() : -1;
+  // Email is optional; only validate the format when one is provided.
+  const emailValid = email === "" || EMAIL_RE.test(email);
 
   if (
     name.length < 2 ||
-    !EMAIL_RE.test(email) ||
+    !emailValid ||
     !validDate ||
     CLOSED_WEEKDAYS.includes(day) ||
     !time ||
@@ -35,7 +40,15 @@ export async function createReservation(
 
   // TODO (post-demo): persist to the database + notify the team / send a
   // confirmation email to the guest.
-  console.log("[reservation] request received", { name, email, date, time, guests });
+  console.log("[reservation] request received", {
+    name,
+    email,
+    phone,
+    date,
+    time,
+    guests,
+    newsletter,
+  });
 
   return { status: "success", summary: { name, date, time, guests } };
 }

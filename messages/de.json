@@ -10,9 +10,9 @@
     "whereAndWhen": "Wo & Wann",
     "menu": "Speisekarte",
     "events": "Veranstaltungen",
-    "reserveTable": "Tisch reservieren",
+    "reserveTable": "Reservieren",
     "findUs": "So finden Sie uns",
-    "contact": "Kontakt",
+    "contact": "Über uns",
     "reviews": "Bewertung abgeben",
     "login": "Anmelden",
     "openMenu": "Menü öffnen",
@@ -24,9 +24,8 @@
     "title": "Herzlich willkommen bei Das Schnucken",
     "subtitle": "Saisonale Küche, gemütliche Atmosphäre und ein Ort zum Verweilen. Entdecken Sie unser Haus.",
     "ctaMenu": "Speisekarte ansehen",
-    "ctaReserve": "Tisch reservieren",
+    "ctaReserve": "Reservieren",
     "sectionsTitle": "Entdecken Sie unser Haus",
-    "aboutHeading": "Schön, dass ihr da seid",
     "sectionsEyebrow": "Schau dich um"
   },
   "openingHours": {
@@ -54,8 +53,9 @@
   "reservation": {
     "intro": "Reservieren Sie Ihren Tisch – wir freuen uns auf Ihren Besuch.",
     "nameLabel": "Name",
-    "emailLabel": "E-Mail",
+    "emailLabel": "E-Mail (optional)",
     "phoneLabel": "Telefon (optional)",
+    "newsletterLabel": "Newsletter abonnieren",
     "dateLabel": "Datum",
     "datePlaceholder": "Datum wählen",
     "timeLabel": "Uhrzeit",
@@ -101,8 +101,8 @@
       "intro": "Adresse, Öffnungszeiten und Anfahrt. Inhalt folgt in Kürze."
     },
     "contact": {
-      "title": "Kontakt",
-      "intro": "Schreiben Sie uns, rufen Sie uns an oder kommen Sie einfach vorbei."
+      "title": "Über uns",
+      "intro": "Unsere Geschichte, wie ihr uns erreicht, und unser Newsletter."
     },
     "reviews": {
       "title": "Bewertung abgeben",
@@ -227,6 +227,7 @@
   },
   "contact": {
     "eyebrow": "Wir sind da",
+    "storyHeading": "Schön, dass ihr da seid",
     "getInTouch": "Kontakt aufnehmen",
     "intro": "Wir freuen uns, von Ihnen zu hören. Reservieren Sie einen Tisch, fragen Sie nach der Karte oder sagen Sie einfach Hallo.",
     "addressLabel": "So finden Sie uns",
@@ -236,6 +237,15 @@
     "vatLabel": "USt-IdNr.",
     "getDirections": "Route planen",
     "country": "Deutschland"
+  },
+  "newsletter": {
+    "heading": "Bleiben Sie in Kontakt",
+    "description": "Melden Sie sich für gelegentliche Neuigkeiten zu Karte, Veranstaltungen und schönen Abenden an.",
+    "emailLabel": "E-Mail-Adresse",
+    "emailPlaceholder": "sie@beispiel.de",
+    "submit": "Abonnieren",
+    "success": "Vielen Dank! Sie stehen auf der Liste.",
+    "invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
   },
   "reviews": {
     "eyebrow": "Nette Worte",
