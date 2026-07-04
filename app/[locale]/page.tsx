@@ -68,7 +68,7 @@ export default async function HomePage({
               height={513}
               priority
               unoptimized
-              className="mx-auto h-auto w-full max-w-md"
+              className="mx-auto h-auto w-full max-w-[420px]"
             />
             <Image
               src="/schnucken-hero-logo.svg"
@@ -76,7 +76,7 @@ export default async function HomePage({
               width={1079}
               height={648}
               unoptimized
-              className="mx-auto mt-4 h-auto w-1/4 max-w-[150px]"
+              className="mx-auto mt-4 h-auto w-1/3 max-w-[200px]"
             />
           </div>
         </div>
