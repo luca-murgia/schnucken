@@ -3,7 +3,6 @@ import { getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/navigation";
 import { sections } from "@/lib/nav";
-import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "./language-switcher";
 import { MobileNav } from "./mobile-nav";
 
@@ -44,9 +43,11 @@ export async function SiteHeader() {
           <div className="hidden md:block">
             <LanguageSwitcher />
           </div>
-          <Button asChild size="sm" className="hidden md:inline-flex">
+          {/* Login hidden for the public demo — clients don't need accounts.
+              Restore when the admin/backoffice ships. */}
+          {/* <Button asChild size="sm" className="hidden md:inline-flex">
             <Link href="/login">{t("login")}</Link>
-          </Button>
+          </Button> */}
           <div className="md:hidden">
             <MobileNav />
           </div>

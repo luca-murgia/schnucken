@@ -86,7 +86,7 @@ export default async function ContactPage({
         <Card>
           <CardHeader>
             <CardTitle className="text-xl text-espresso">
-              {t("home.ctaContact")}
+              {t("contact.getInTouch")}
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-5">

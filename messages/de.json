@@ -24,7 +24,7 @@
     "title": "Herzlich willkommen bei Das Schnucken",
     "subtitle": "Saisonale Küche, gemütliche Atmosphäre und ein Ort zum Verweilen. Entdecken Sie unser Haus.",
     "ctaMenu": "Speisekarte ansehen",
-    "ctaContact": "Kontakt aufnehmen",
+    "ctaReserve": "Tisch reservieren",
     "sectionsTitle": "Entdecken Sie unser Haus",
     "aboutHeading": "Schön, dass ihr da seid"
   },
@@ -225,6 +225,7 @@
   },
   "contact": {
     "eyebrow": "Kontakt",
+    "getInTouch": "Kontakt aufnehmen",
     "intro": "Wir freuen uns, von Ihnen zu hören. Reservieren Sie einen Tisch, fragen Sie nach der Karte oder sagen Sie einfach Hallo.",
     "addressLabel": "So finden Sie uns",
     "emailLabel": "Schreiben Sie uns",

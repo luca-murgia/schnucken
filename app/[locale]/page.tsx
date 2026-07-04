@@ -47,7 +47,7 @@ export default async function HomePage({
             </p>
             <div className="mt-9 flex flex-wrap justify-center gap-3 md:justify-start">
               <Button asChild size="lg">
-                <Link href="/menu">{t("home.ctaMenu")}</Link>
+                <Link href="/reserve">{t("home.ctaReserve")}</Link>
               </Button>
               <Button
                 asChild
@@ -55,7 +55,7 @@ export default async function HomePage({
                 variant="outline"
                 className="border-espresso/30 bg-transparent text-espresso hover:bg-espresso/5"
               >
-                <Link href="/contact">{t("home.ctaContact")}</Link>
+                <Link href="/menu">{t("home.ctaMenu")}</Link>
               </Button>
             </div>
           </div>

@@ -48,14 +48,16 @@ export function MobileNav() {
               </Link>
             </SheetClose>
           ))}
-          <SheetClose asChild>
+          {/* Login hidden for the public demo — clients don't need accounts.
+              Restore when the admin/backoffice ships. */}
+          {/* <SheetClose asChild>
             <Link
               href="/login"
               className="mt-2 rounded-md bg-espresso px-3 py-2 text-center text-base font-medium text-cream transition-colors hover:bg-espresso/90"
             >
               {t("login")}
             </Link>
-          </SheetClose>
+          </SheetClose> */}
         </nav>
 
         <div className="mt-6 px-4">

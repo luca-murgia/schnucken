@@ -24,7 +24,7 @@
     "title": "Benvenuti da Das Schnucken",
     "subtitle": "Cucina di stagione, un'atmosfera accogliente e un luogo dove fermarsi. Scoprite la nostra casa.",
     "ctaMenu": "Vedi il menu",
-    "ctaContact": "Contattaci",
+    "ctaReserve": "Prenota un tavolo",
     "sectionsTitle": "Scoprite la nostra casa",
     "aboutHeading": "Che bello avervi qui"
   },
@@ -225,6 +225,7 @@
   },
   "contact": {
     "eyebrow": "Contatti",
+    "getInTouch": "Contattaci",
     "intro": "Ci farebbe piacere sentirvi. Prenotate un tavolo, chiedeteci del menù o semplicemente salutateci.",
     "addressLabel": "Dove siamo",
     "emailLabel": "Scriveteci",
