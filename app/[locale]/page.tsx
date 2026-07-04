@@ -74,36 +74,13 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* Get to Know Us */}
-      <section id="about" className="scroll-mt-24 bg-cream">
-        <div className="mx-auto max-w-3xl px-5 py-16 md:px-6 md:py-20">
-          <span className="text-xs font-semibold tracking-[0.18em] text-clay uppercase">
-            {t("nav.about")}
-          </span>
-          <h2 className="mt-3 text-3xl font-semibold text-ink md:text-4xl">
-            {t("home.aboutHeading")}
-          </h2>
-          <div className="mt-7 space-y-5 text-lg leading-relaxed text-ink/80">
-            {aboutParagraphs.map((para, i) => (
-              <p
-                key={i}
-                className={
-                  i === aboutParagraphs.length - 1
-                    ? "font-medium text-ink italic"
-                    : undefined
-                }
-              >
-                {para}
-              </p>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Discover our house */}
       <section className="bg-oat">
         <div className="mx-auto max-w-6xl px-5 py-16 md:px-6 md:py-24">
-          <h2 className="text-3xl font-semibold text-ink">
+          <span className="text-xs font-semibold tracking-[0.18em] text-clay uppercase">
+            {t("home.sectionsEyebrow")}
+          </span>
+          <h2 className="mt-3 text-3xl font-semibold text-ink">
             {t("home.sectionsTitle")}
           </h2>
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -120,6 +97,29 @@ export default async function HomePage({
                   </CardHeader>
                 </Card>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Get to Know Us */}
+      <section id="about" className="scroll-mt-24 bg-cream">
+        <div className="mx-auto max-w-3xl px-5 py-16 md:px-6 md:py-20">
+          <h2 className="text-3xl font-semibold text-ink md:text-4xl">
+            {t("home.aboutHeading")}
+          </h2>
+          <div className="mt-7 space-y-5 text-lg leading-relaxed text-ink/80">
+            {aboutParagraphs.map((para, i) => (
+              <p
+                key={i}
+                className={
+                  i === aboutParagraphs.length - 1
+                    ? "font-medium text-ink italic"
+                    : undefined
+                }
+              >
+                {para}
+              </p>
             ))}
           </div>
         </div>
