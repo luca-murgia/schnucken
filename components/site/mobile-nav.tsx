@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/sheet";
 import { LanguageSwitcher } from "./language-switcher";
 
-export function MobileNav() {
+export function MobileNav({ isAdmin = false }: { isAdmin?: boolean }) {
   const t = useTranslations("nav");
   // Mobile-nav open state lives in the Zustand UI store.
   const open = useUIStore((s) => s.mobileNavOpen);
@@ -48,16 +48,18 @@ export function MobileNav() {
               </Link>
             </SheetClose>
           ))}
-          {/* Login hidden for the public demo — clients don't need accounts.
-              Restore when the admin/backoffice ships. */}
-          {/* <SheetClose asChild>
-            <Link
-              href="/login"
-              className="mt-2 rounded-md bg-espresso px-3 py-2 text-center text-base font-medium text-cream transition-colors hover:bg-espresso/90"
-            >
-              {t("login")}
-            </Link>
-          </SheetClose> */}
+          {/* Login stays hidden for the public demo — clients don't need
+              accounts. Signed-in admins get an Admin link back to the backoffice. */}
+          {isAdmin && (
+            <SheetClose asChild>
+              <Link
+                href="/admin"
+                className="mt-2 rounded-md bg-espresso px-3 py-2 text-center text-base font-medium text-cream transition-colors hover:bg-espresso/90"
+              >
+                {t("admin")}
+              </Link>
+            </SheetClose>
+          )}
         </nav>
 
         <div className="mt-6 px-4">

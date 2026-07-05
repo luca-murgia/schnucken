@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { contact } from "@/lib/contact";
 import { getContent } from "@/lib/content";
 import { NewsletterForm } from "@/components/site/newsletter-form";
+import { AdminEditButton } from "@/components/site/admin-edit-button";
 import {
   Card,
   CardContent,
@@ -164,6 +165,8 @@ export default async function ContactPage({
           <NewsletterForm />
         </CardContent>
       </Card>
+
+      <AdminEditButton href="/admin/content" label={t("admin.content.editOnSite")} />
     </section>
   );
 }

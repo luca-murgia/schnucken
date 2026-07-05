@@ -100,3 +100,42 @@ model ContentBlock {
   @@unique([key, locale])
   @@map("content_blocks")
 }
+
+// Menus shown on /[locale]/menu, managed from /admin/menu. Single-language
+// (the owner writes each menu once). A menu groups items; multiple menus can be
+// published at once (e.g. Breakfast, Dinner). Read via lib/menu.ts, written via
+// lib/menu-actions.ts.
+model Menu {
+  id        String     @id @default(cuid())
+  title     String
+  subtitle  String? // optional line under the menu heading
+  published Boolean    @default(true)
+  sortOrder Int        @default(0) // lower shows first
+  items     MenuItem[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+
+  @@map("menus")
+}
+
+// A single dish/line on a menu. `category` is an optional grouping heading
+// (e.g. "Starters"); when blank the item is listed ungrouped. `dietaryTags`
+// holds language-neutral keys (e.g. "vegan") localised via the message catalog.
+model MenuItem {
+  id          String   @id @default(cuid())
+  menuId      String
+  menu        Menu     @relation(fields: [menuId], references: [id], onDelete: Cascade)
+  name        String
+  description String?
+  price       String // free text: "8,50", "Tagespreis"
+  category    String? // optional heading; blank = ungrouped
+  dietaryTags String[] // e.g. ["vegetarian", "vegan"]
+  image       String? // public path or data: URL (uploaded, downscaled)
+  published   Boolean  @default(true)
+  sortOrder   Int      @default(0) // lower shows first
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([menuId])
+  @@map("menu_items")
+}

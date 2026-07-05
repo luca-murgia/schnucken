@@ -1,13 +1,18 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
+import { auth } from "@/auth";
 import { Link } from "@/i18n/navigation";
 import { sections } from "@/lib/nav";
+import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "./language-switcher";
 import { MobileNav } from "./mobile-nav";
 
 export async function SiteHeader() {
   const t = await getTranslations("nav");
+  // Show the backoffice link only to a signed-in admin — clients never see it.
+  const session = await auth();
+  const isAdmin = session?.user?.role === "admin";
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/70 bg-cream/85 backdrop-blur supports-[backdrop-filter]:bg-cream/70">
@@ -43,13 +48,21 @@ export async function SiteHeader() {
           <div className="hidden md:block">
             <LanguageSwitcher />
           </div>
-          {/* Login hidden for the public demo — clients don't need accounts.
-              Restore when the admin/backoffice ships. */}
-          {/* <Button asChild size="sm" className="hidden md:inline-flex">
-            <Link href="/login">{t("login")}</Link>
-          </Button> */}
+          {/* Login stays hidden for the public demo — clients don't need
+              accounts. Once the owner is signed in, an Admin link appears here
+              for one-click access back to the backoffice. */}
+          {isAdmin && (
+            <Button
+              asChild
+              size="sm"
+              variant="outline"
+              className="hidden md:inline-flex"
+            >
+              <Link href="/admin">{t("admin")}</Link>
+            </Button>
+          )}
           <div className="md:hidden">
-            <MobileNav />
+            <MobileNav isAdmin={isAdmin} />
           </div>
         </div>
       </div>

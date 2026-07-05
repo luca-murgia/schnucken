@@ -2,10 +2,11 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { getPublishedEvents, type EventCard as EventData } from "@/lib/events";
 import { EventCard } from "@/components/site/event-card";
+import { AdminEditButton } from "@/components/site/admin-edit-button";
 
-// Mostly static; admin edits refresh it instantly via revalidatePath, and this
-// ISR window lets direct DB changes (e.g. the seed) surface without a redeploy.
-export const revalidate = 300;
+// Rendered dynamically (not ISR-cached): the page contains the admin-only
+// AdminEditButton, which depends on the per-request session — caching it would
+// leak the edit affordance to the public. Admin edits still show immediately.
 
 export async function generateMetadata({
   params,
@@ -62,6 +63,8 @@ export default async function EventsPage({
           <EventCard key={event.id} event={event} />
         ))}
       </div>
+
+      <AdminEditButton href="/admin/events" label={t("events.admin.editOnSite")} />
     </section>
   );
 }
