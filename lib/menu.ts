@@ -98,3 +98,44 @@ export type MenuFormState =
   | undefined;
 
 export type MenuItemFormState = MenuFormState;
+
+// Downloadable menu file (shown when the menu is in "download" mode). The `file`
+// data URL is deliberately NOT selected for listings — it can be several MB; the
+// bytes are fetched only by the /api/menu-download/[id] route that serves them.
+export type MenuDownloadData = {
+  id: string;
+  title: string;
+  fileName: string;
+  fileType: string;
+  sortOrder: number;
+};
+
+const DOWNLOAD_ORDER = [{ sortOrder: "asc" }, { createdAt: "asc" }] as const;
+
+const DOWNLOAD_FIELDS = {
+  id: true,
+  title: true,
+  fileName: true,
+  fileType: true,
+  sortOrder: true,
+} as const;
+
+/**
+ * Downloadable menu files (without the heavy `file` blob) for the public page
+ * and the admin list. Empty on DB error, mirroring the menu reads above.
+ */
+export async function getMenuDownloads(): Promise<MenuDownloadData[]> {
+  try {
+    return await prisma.menuDownload.findMany({
+      orderBy: [...DOWNLOAD_ORDER],
+      select: DOWNLOAD_FIELDS,
+    });
+  } catch {
+    return [];
+  }
+}
+
+export type MenuDownloadFormState =
+  | { status: "saved"; id: string }
+  | { status: "error"; reason?: "tooLarge" | "invalidFile" }
+  | undefined;

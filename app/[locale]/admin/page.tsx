@@ -51,6 +51,20 @@ export default async function AdminPage() {
             </Button>
           </CardContent>
         </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-espresso">
+              {t("manageSettings")}
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p className="text-muted-foreground">{t("settingsEditing")}</p>
+            <Button asChild>
+              <Link href="/admin/settings">{t("manageSettings")}</Link>
+            </Button>
+          </CardContent>
+        </Card>
       </div>
     </div>
   );

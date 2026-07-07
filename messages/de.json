@@ -160,6 +160,11 @@
       "vegan": "Vegan",
       "glutenFree": "Glutenfrei"
     },
+    "download": {
+      "intro": "Werfen Sie einen Blick auf unsere aktuelle Speisekarte.",
+      "view": "Speisekarte öffnen",
+      "empty": "Unsere Speisekarte wird gerade vorbereitet. Schauen Sie bald wieder vorbei."
+    },
     "admin": {
       "title": "Speisekarten",
       "subtitle": "Legen Sie Speisekarten und ihre Positionen an. Mehrere Karten können gleichzeitig aktiv sein (z. B. Frühstück, Abendessen). Änderungen erscheinen sofort auf der Website.",
@@ -207,7 +212,30 @@
       "deleteMenuConfirm": "Diese Speisekarte und alle ihre Positionen löschen?",
       "deleteItemConfirm": "Diese Position wirklich löschen?",
       "deleting": "Löschen …",
-      "draft": "Entwurf"
+      "draft": "Entwurf",
+      "modeLive": "Live-Speisekarte",
+      "modeDownload": "Dateien zum Download",
+      "modeBanner": "Besucher sehen aktuell: {mode}.",
+      "changeInSettings": "In den Einstellungen ändern",
+      "downloads": {
+        "heading": "Speisekarten zum Download",
+        "subtitle": "Laden Sie Dateien (z. B. ein PDF) hoch, die Besucher öffnen können. Werden auf der Speisekarten-Seite angezeigt, wenn der Anzeigemodus auf „Dateien zum Download“ steht.",
+        "newDownload": "Datei hinzufügen",
+        "titleLabel": "Bezeichnung",
+        "titlePlaceholder": "z. B. Abendkarte",
+        "fileLabel": "Datei",
+        "fileHint": "PDF, PNG, JPG oder WebP, bis zu 6 MB.",
+        "chooseFile": "Datei wählen",
+        "changeFile": "Datei ändern",
+        "removeFile": "Datei entfernen",
+        "noFile": "Keine Datei ausgewählt",
+        "add": "Datei hinzufügen",
+        "view": "Ansehen",
+        "empty": "Noch keine Dateien hochgeladen.",
+        "deleteConfirm": "Diese Datei löschen?",
+        "tooLarge": "Diese Datei ist zu groß (max. 6 MB).",
+        "invalidFile": "Nicht unterstützter Dateityp. Bitte PDF, PNG, JPG oder WebP."
+      }
     }
   },
   "login": {
@@ -231,6 +259,23 @@
     "manageEvents": "Veranstaltungen verwalten",
     "manageMenu": "Speisekarten verwalten",
     "menuEditing": "Erstellen und bearbeiten Sie die Speisekarten für die Website.",
+    "manageSettings": "Einstellungen",
+    "settingsEditing": "Newsletter ein-/ausschalten und die Speisekarten-Anzeige wählen.",
+    "settings": {
+      "title": "Website-Einstellungen",
+      "subtitle": "Funktionen ein- oder ausschalten. Änderungen erscheinen sofort auf der Website.",
+      "newsletterHeading": "Newsletter",
+      "newsletterHint": "Wenn aktiv, erscheint eine Anmeldung auf der Über-uns-Seite und ein Häkchen im Reservierungsformular.",
+      "newsletterLabel": "Newsletter-Anmeldung anzeigen",
+      "menuModeHeading": "Speisekarten-Anzeige",
+      "menuModeHint": "Eine hier erstellte Speisekarte anzeigen oder Besucher hochgeladene Dateien (z. B. ein PDF) herunterladen lassen.",
+      "menuModeLive": "Live-Speisekarte",
+      "menuModeDownload": "Dateien zum Download",
+      "save": "Speichern",
+      "saving": "Speichern …",
+      "saved": "Gespeichert",
+      "error": "Speichern fehlgeschlagen. Bitte versuchen Sie es erneut."
+    },
     "content": {
       "title": "Website-Inhalte",
       "subtitle": "Bearbeiten Sie die Texte in allen drei Sprachen. Änderungen erscheinen sofort auf der Website.",

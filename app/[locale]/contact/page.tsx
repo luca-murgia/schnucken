@@ -2,6 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { contact } from "@/lib/contact";
 import { getContent } from "@/lib/content";
+import { getSettings } from "@/lib/settings";
 import { NewsletterForm } from "@/components/site/newsletter-form";
 import { AdminEditButton } from "@/components/site/admin-edit-button";
 import {
@@ -29,6 +30,7 @@ export default async function ContactPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations();
+  const { newsletterEnabled } = await getSettings();
 
   // "Get to Know Us" story — editable via the admin content editor, falls back
   // to the message catalog when the DB isn't wired.
@@ -153,18 +155,22 @@ export default async function ContactPage({
         </Card>
       </div>
 
-      {/* Newsletter sign-up */}
-      <Card className="mt-5">
-        <CardHeader>
-          <CardTitle className="text-xl text-espresso">
-            {t("newsletter.heading")}
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-5">
-          <p className="max-w-2xl text-ink/80">{t("newsletter.description")}</p>
-          <NewsletterForm />
-        </CardContent>
-      </Card>
+      {/* Newsletter sign-up — hidden unless enabled in the backoffice settings. */}
+      {newsletterEnabled && (
+        <Card className="mt-5">
+          <CardHeader>
+            <CardTitle className="text-xl text-espresso">
+              {t("newsletter.heading")}
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-5">
+            <p className="max-w-2xl text-ink/80">
+              {t("newsletter.description")}
+            </p>
+            <NewsletterForm />
+          </CardContent>
+        </Card>
+      )}
 
       <AdminEditButton href="/admin/content" label={t("admin.content.editOnSite")} />
     </section>

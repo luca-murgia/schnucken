@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
+import { getSettings } from "@/lib/settings";
 import { ReservationForm } from "@/components/site/reservation-form";
 
 export async function generateMetadata({
@@ -20,6 +21,7 @@ export default async function ReservePage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations();
+  const { newsletterEnabled } = await getSettings();
 
   return (
     <section className="mx-auto max-w-4xl px-5 py-16 md:px-6 md:py-24">
@@ -32,7 +34,7 @@ export default async function ReservePage({
       <p className="mt-4 max-w-xl text-lg text-muted-foreground">
         {t("reservation.intro")}
       </p>
-      <ReservationForm />
+      <ReservationForm newsletterEnabled={newsletterEnabled} />
     </section>
   );
 }

@@ -139,3 +139,32 @@ model MenuItem {
   @@index([menuId])
   @@map("menu_items")
 }
+
+// Downloadable menu files shown on /[locale]/menu when the menu is in "download"
+// mode (see SiteSetting "menu.mode"). The file bytes are stored inline as a
+// data: URL (base64) — no blob storage — and streamed to visitors via
+// /api/menu-download/[id]. Managed from /admin/menu.
+model MenuDownload {
+  id        String   @id @default(cuid())
+  title     String // label shown to visitors, e.g. "Dinner menu"
+  fileName  String // original filename, used for the download attribute
+  fileType  String // MIME type, e.g. application/pdf
+  file      String // data: URL (base64-encoded bytes) — Postgres text, no limit
+  sortOrder Int      @default(0) // lower shows first
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("menu_downloads")
+}
+
+// Site-wide feature flags / settings as a simple key-value store. One row per
+// key (e.g. "newsletter.enabled" = "true", "menu.mode" = "live"). Read
+// resiliently via lib/settings.ts (falls back to defaults when unset or the DB
+// is unreachable), written via lib/settings-actions.ts from /admin/settings.
+model SiteSetting {
+  key       String   @id
+  value     String
+  updatedAt DateTime @updatedAt
+
+  @@map("site_settings")
+}

@@ -160,6 +160,11 @@
       "vegan": "Vegano",
       "glutenFree": "Senza glutine"
     },
+    "download": {
+      "intro": "Dai un'occhiata al nostro menu attuale.",
+      "view": "Apri il menu",
+      "empty": "Il nostro menu è in preparazione. Torna a trovarci presto."
+    },
     "admin": {
       "title": "Menu",
       "subtitle": "Crea i menu e le loro voci. Puoi avere più menu attivi contemporaneamente (es. Colazione, Cena). Le modifiche appaiono subito sul sito.",
@@ -207,7 +212,30 @@
       "deleteMenuConfirm": "Eliminare questo menu e tutte le sue voci?",
       "deleteItemConfirm": "Vuoi davvero eliminare questa voce?",
       "deleting": "Eliminazione …",
-      "draft": "Bozza"
+      "draft": "Bozza",
+      "modeLive": "Menu live",
+      "modeDownload": "File da scaricare",
+      "modeBanner": "Al momento i visitatori vedono: {mode}.",
+      "changeInSettings": "Modifica nelle impostazioni",
+      "downloads": {
+        "heading": "Menu da scaricare",
+        "subtitle": "Carica file (es. un PDF) che i visitatori possono aprire. Vengono mostrati nella pagina del menu quando la modalità di visualizzazione è impostata su «File da scaricare».",
+        "newDownload": "Aggiungi un file",
+        "titleLabel": "Etichetta",
+        "titlePlaceholder": "es. Menu della cena",
+        "fileLabel": "File",
+        "fileHint": "PDF, PNG, JPG o WebP, fino a 6 MB.",
+        "chooseFile": "Scegli file",
+        "changeFile": "Cambia file",
+        "removeFile": "Rimuovi file",
+        "noFile": "Nessun file selezionato",
+        "add": "Aggiungi file",
+        "view": "Apri",
+        "empty": "Nessun file caricato.",
+        "deleteConfirm": "Eliminare questo file?",
+        "tooLarge": "Il file è troppo grande (max 6 MB).",
+        "invalidFile": "Tipo di file non supportato. Usa PDF, PNG, JPG o WebP."
+      }
     }
   },
   "login": {
@@ -231,6 +259,23 @@
     "manageEvents": "Gestisci eventi",
     "manageMenu": "Gestisci menu",
     "menuEditing": "Crea e modifica i menu mostrati sul sito.",
+    "manageSettings": "Impostazioni",
+    "settingsEditing": "Attiva/disattiva la newsletter e scegli la visualizzazione del menu.",
+    "settings": {
+      "title": "Impostazioni del sito",
+      "subtitle": "Attiva o disattiva le funzioni. Le modifiche appaiono subito sul sito.",
+      "newsletterHeading": "Newsletter",
+      "newsletterHint": "Se attiva, mostra l'iscrizione nella pagina Chi siamo e una casella nel modulo di prenotazione.",
+      "newsletterLabel": "Mostra l'iscrizione alla newsletter",
+      "menuModeHeading": "Visualizzazione del menu",
+      "menuModeHint": "Mostra un menu creato qui oppure lascia che i visitatori scarichino i file caricati (es. un PDF).",
+      "menuModeLive": "Menu live",
+      "menuModeDownload": "File da scaricare",
+      "save": "Salva",
+      "saving": "Salvataggio …",
+      "saved": "Salvato",
+      "error": "Salvataggio non riuscito. Riprova."
+    },
     "content": {
       "title": "Contenuti del sito",
       "subtitle": "Modifica i testi in tutte e tre le lingue. Le modifiche appaiono subito sul sito.",

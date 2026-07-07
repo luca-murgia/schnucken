@@ -37,7 +37,11 @@ function toISODate(d: Date) {
   return `${y}-${m}-${day}`;
 }
 
-export function ReservationForm() {
+export function ReservationForm({
+  newsletterEnabled = false,
+}: {
+  newsletterEnabled?: boolean;
+}) {
   const t = useTranslations("reservation");
   const tCommon = useTranslations("common");
   const locale = useLocale();
@@ -194,12 +198,15 @@ export function ReservationForm() {
         </div>
       </div>
 
-      <div className="flex items-center gap-3">
-        <Checkbox id="newsletter" name="newsletter" defaultChecked />
-        <Label htmlFor="newsletter" className="font-normal">
-          {t("newsletterLabel")}
-        </Label>
-      </div>
+      {/* Newsletter opt-in — hidden unless enabled in the backoffice settings. */}
+      {newsletterEnabled && (
+        <div className="flex items-center gap-3">
+          <Checkbox id="newsletter" name="newsletter" defaultChecked />
+          <Label htmlFor="newsletter" className="font-normal">
+            {t("newsletterLabel")}
+          </Label>
+        </div>
+      )}
 
       <div className="space-y-2">
         <Label htmlFor="notes">{t("notesLabel")}</Label>

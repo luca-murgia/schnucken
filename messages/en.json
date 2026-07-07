@@ -160,6 +160,11 @@
       "vegan": "Vegan",
       "glutenFree": "Gluten-free"
     },
+    "download": {
+      "intro": "Browse our current menu.",
+      "view": "Open menu",
+      "empty": "Our menu is being prepared. Check back soon."
+    },
     "admin": {
       "title": "Menus",
       "subtitle": "Create menus and their items. Several menus can run at once (e.g. Breakfast, Dinner). Changes appear on the site immediately.",
@@ -207,7 +212,30 @@
       "deleteMenuConfirm": "Delete this menu and all its items?",
       "deleteItemConfirm": "Really delete this item?",
       "deleting": "Deleting …",
-      "draft": "Draft"
+      "draft": "Draft",
+      "modeLive": "Live menu",
+      "modeDownload": "Downloadable files",
+      "modeBanner": "Visitors currently see: {mode}.",
+      "changeInSettings": "Change in Settings",
+      "downloads": {
+        "heading": "Downloadable menus",
+        "subtitle": "Upload files (e.g. a PDF) for visitors to open. Shown on the menu page when the display mode is set to “Downloadable files”.",
+        "newDownload": "Add a file",
+        "titleLabel": "Label",
+        "titlePlaceholder": "e.g. Dinner menu",
+        "fileLabel": "File",
+        "fileHint": "PDF, PNG, JPG or WebP, up to 6 MB.",
+        "chooseFile": "Choose file",
+        "changeFile": "Change file",
+        "removeFile": "Remove file",
+        "noFile": "No file chosen",
+        "add": "Add file",
+        "view": "View",
+        "empty": "No files uploaded yet.",
+        "deleteConfirm": "Delete this file?",
+        "tooLarge": "That file is too large (max 6 MB).",
+        "invalidFile": "Unsupported file type. Use PDF, PNG, JPG or WebP."
+      }
     }
   },
   "login": {
@@ -231,6 +259,23 @@
     "manageEvents": "Manage events",
     "manageMenu": "Manage menu",
     "menuEditing": "Create and edit the menus shown on the website.",
+    "manageSettings": "Site settings",
+    "settingsEditing": "Toggle the newsletter and choose how the menu is shown.",
+    "settings": {
+      "title": "Site settings",
+      "subtitle": "Turn features on or off. Changes apply to the public site immediately.",
+      "newsletterHeading": "Newsletter",
+      "newsletterHint": "When on, a sign-up appears on the About page and an opt-in checkbox on the reservation form.",
+      "newsletterLabel": "Show the newsletter sign-up",
+      "menuModeHeading": "Menu display",
+      "menuModeHint": "Show a menu you build here, or let visitors download uploaded files (e.g. a PDF).",
+      "menuModeLive": "Live menu",
+      "menuModeDownload": "Downloadable files",
+      "save": "Save",
+      "saving": "Saving …",
+      "saved": "Saved",
+      "error": "Saving failed. Please try again."
+    },
     "content": {
       "title": "Website content",
       "subtitle": "Edit the copy in all three languages. Changes appear on the site immediately.",

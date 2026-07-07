@@ -1,9 +1,11 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import Image from "next/image";
+import { FileText } from "lucide-react";
 
-import { getPublishedMenus, type MenuItemData } from "@/lib/menu";
+import { getPublishedMenus, getMenuDownloads, type MenuItemData } from "@/lib/menu";
+import { getSettings } from "@/lib/settings";
 import { AdminEditButton } from "@/components/site/admin-edit-button";
 import { PagePlaceholder } from "@/components/site/page-placeholder";
-import Image from "next/image";
 
 // Rendered dynamically (not ISR-cached): the page contains the admin-only
 // AdminEditButton, which depends on the per-request session — caching it would
@@ -45,6 +47,60 @@ export default async function MenuPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations();
+  const { menuMode } = await getSettings();
+
+  // Download mode: the owner uploads files (e.g. a PDF) that visitors open.
+  if (menuMode === "download") {
+    const downloads = await getMenuDownloads();
+    return (
+      <section className="mx-auto max-w-3xl px-5 py-16 md:px-6 md:py-24">
+        <span className="text-xs font-semibold tracking-[0.18em] text-clay uppercase">
+          {t("menu.eyebrow")}
+        </span>
+        <h1 className="mt-3 text-4xl font-semibold text-ink md:text-5xl">
+          {t("sections.menu.title")}
+        </h1>
+
+        {downloads.length === 0 ? (
+          <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
+            {t("menu.download.empty")}
+          </p>
+        ) : (
+          <>
+            <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
+              {t("menu.download.intro")}
+            </p>
+            <ul className="mt-10 space-y-3">
+              {downloads.map((d) => (
+                <li key={d.id}>
+                  <a
+                    href={`/api/menu-download/${d.id}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-4 rounded-xl border border-border bg-card p-4 transition-colors hover:border-clay hover:bg-oat/40"
+                  >
+                    <div className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-oat text-clay">
+                      <FileText className="size-5" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <p className="font-medium text-ink">{d.title}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {t("menu.download.view")}
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        <AdminEditButton href="/admin/menu" label={t("menu.admin.editOnSite")} />
+      </section>
+    );
+  }
+
+  // Live mode: the built menu from the editor.
   const menus = await getPublishedMenus();
 
   // Before Neon is wired (or when no menu has been created yet), fall back to
